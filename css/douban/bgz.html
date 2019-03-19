@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>background-size</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .photo{
+            width: 400px;
+            height: 400px;
+            background:url(https://user-gold-cdn.xitu.io/2019/2/25/16922d6d22ff1458?imageView2/1/w/200/h/280/q/95/format/webp/interlace/1);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color:red;
+            background-size:cover;
+            /* cover把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。 */
+            /* contain把图像扩展至最大尺寸，以使宽度和高度 完全适应内容区域。盒子会留白 */
+            /* 如何等比例缩放图片 */
+        }
+    </style>
+</head>
+<body>
+    <div class="photo"></div>
+</body>
+</html>
