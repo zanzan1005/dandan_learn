@@ -17,6 +17,7 @@
         }
         .content{
             padding: 0 200px;
+            overflow: hidden;
         }
         .text{
             text-align: center;
@@ -47,8 +48,12 @@
             position: relative;
             left: 200px;
         }
-        .clearFix{
-            float:left;
+        .contentFix::after{
+            content:'';
+            clear:both;
+            display:block;
+            height:0;
+            visibility:hidden;
         }
     </style>
 </head>
