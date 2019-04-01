@@ -10,7 +10,7 @@ body{
     font-family:Helvetica,sans-serif,Fallback;
     -webkit-tab-hightlight-color:rgba(0,0,0,0,);
     -ms-tab-hightlight-color:rgba(0,0,0,0,);
-    tab-highlight-color:rgba(0,0,0,0,);
+    -moz-tab-highlight-color:rgba(0,0,0,0,);
 }
 html,body{
     width: 100%;
@@ -50,6 +50,9 @@ img{
     bottom: 0;
     background-color: #43812b;
     z-index:1000;
+    display:none;
+}
+.layer1{
     display:none;
 }
 .loadImg{
