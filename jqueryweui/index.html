@@ -26,11 +26,25 @@
 </head>
 <body>
     <div class="page">
+        <!-- 下拉刷新 -->
+                <!-- body 顶部加上如下代码 -->
+                <div class="weui-pull-to-refresh__layer">
+                  <div class='weui-pull-to-refresh__arrow'></div>
+                  <div class='weui-pull-to-refresh__preloader'></div>
+                  <div class="down">下拉刷新</div>
+                  <div class="up">释放刷新</div>
+                  <div class="refresh">正在刷新</div>
+                </div>
         <div class="list">
             <ul class="lists">
                 <li>豆瓣电影Top20</li>
             </ul>
         </div>
+        <!-- 上拉加载更多 -->
+        <div class="weui-loadmore">
+                <i class="weui-loading"></i>
+                <span class="weui-loadmore__tips">正在加载</span>
+              </div>
     </div>
     <script>
         (function(){
@@ -50,6 +64,29 @@
                 error:function(err){
                     console.log(err)
                 }
+            })
+        //下拉刷新时间
+        $('.page').pullToRefresh(function(){
+            console.log('下拉刷新')
+            setTimeout(() => {
+                $('.page').pullToRefreshDone()
+                },1500)
+            })                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+            //上拉加载更多 
+            var loading = false;
+            $('page').infinite().on('inifinite',function(){
+                if (loading) {//loading 为true
+                    return;
+                }
+                loading = true;
+                setTimeout(() =>{
+                    $('.lists').append('<li>我是最新的内容</li>');
+                    loading = false;
+
+                    6666
+                },1500)
+
+
             })
         })()
     </script>
