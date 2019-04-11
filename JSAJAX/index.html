@@ -17,15 +17,52 @@
     xhr.open("get","/mock.json",true)
     xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded")
     xhr.send()
-    console.log(xhr.responseText)
+    // console.log(xhr.responseText)
     // console.log(xhr.readyState,xhr.status)
-    xhr.onreadystatechange = function(){
+    var p = new Promise((resolve,reject) =>{
+         xhr.onreadystatechange = function(){
         if (xhr.readyState == 4 && xhr.status == 200){
             console.log(xhr.responseText)
-            console.log(666)
+            resolve();
+            }
         }
+    })
+   
         // console.log(xhr.responseText)
+    
+    function xq(){
+        return new Promise((resolve,reject) =>{
+        //   setTimeout(() =>{
+            console.log("猛哥要相亲了！")
+            resolve('相亲很顺利！猛哥很开心！')
+            // },1000)   
+        });   
     }
+    // xq();
+    function marry(){
+        return new Promise((resolve,reject) =>{
+        setTimeout(() =>{
+        console.log("猛哥结婚了！")    
+        },500)
+            });
+    }
+
+    // p
+    //     .then(xq)
+    //     .then(marry)
+    //     .catch(() => {
+    //         console.log('猛哥伤心的哭了！')
+    //     })
+    Promise.all([p,xq()]).then(marry).catch((err) =>{
+        console.log(err)
+    })
+    Promise.race([p,xq(),marry()]).then((value) => {
+        console.log(value)
+    })
+    .catch((err) => {
+        console.log(err)
+    })
+    // .then 不需要括号  all 需要括号
     
     // JS里面如果出现了需要较长时间加载的代码会产生异步问题
     // 所以时间短的会先加载出来
