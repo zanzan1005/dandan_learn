@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery源码解析 - 旅梦源码课</title>
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>  性能优化应该放在下面 -->
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <img src="https://pic.36krcnd.com/201904/09061934/9axl9yt10w5w6kq6!heading
+    " alt="" onload="imgLoaded();" >
+    <!-- <script src="https://cdn.bootcss.com/jquery/2.1.2/jquery.min.js"></script> -->
+    <!-- 注释掉jquery $将需要自己去写 function $() {}-->
+    <script>
+        // 当html css 很大的时候，
+        // http请求？img script 本身是一个请求
+        function imgLoaded() {
+            console.log('图片加载完成');
+        }
+        window.onload = function() {
+            console.log('页面加载完成');
+        }
+        // document.addEventListener('DOMContentLoaded',function() {
+        //     console.log('DOM Ready');
+        //     // js开始的地方
+        // })
+        function JQueryEle(ele) {
+            this.ele = ele;
+        }
+        JQueryEle.prototype.html = function(str) {
+            this.ele.innerHTML = str;
+        }
+            function $(selector) {
+                //typeof 对于函数的判断很稳当。不必担心
+                if(typeof selector === 'function') {
+                    document.addEventListener('DOMContentLoaded',selector) /*回调函数*/
+                }else if (typeof selector === 'string') {
+
+                    // $在这里是一个函数，但是又有.html() 方法 该怎么实现呢？
+                    // 1.prototype原型链调用 BUT -->   放弃prototype写法,html方法来自于节点对象 
+                    // 2.$函数运行时的有返回值，返回值是一个对象的话也能达到想要的结果
+
+                    //const ele = new JQueryEle(ele); /*所以这里就是不行的*/
+                    const ele  = document.querySelector(selector);
+                    if(ele) {
+                        // JQueryEle 对象
+                        return new JQueryEle(ele);
+                    }
+                    // $('#root').html()  ==>  querySelector(selector).innerHtml
+                }
+            }
+        // jQuery API简约 更好的兼容性 DOMContentLoaded事件在IE中有兼容性问题
+        $(function() {
+            console.log('DOM Ready');
+            $('#root').html('<p>我要去云南啊，我要去丽江</p>')
+        })
+    </script>
+</body>
+</html>
