@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>硬件设置</title>
+</head>
+
+<body>
+    <!-- 等getUserMedia -->
+    <video id="video" autoplay></video>
+    <!-- 展示视频，用video标签 -->
+    <canvas id="canvas"></canvas>
+    <div class="btn-container">
+        <button id="photo" class="btn">
+            拍照
+        </button>
+    </div>
+    <script>
+        const videoConstraints = {width:1366,height:768};//宽高的极限，给一个约束
+        const canvas = document.getElementById('canvas');
+        const context = canvas.getContext('2d');
+        canvas.width = videoConstraints.width;
+        canvas.height = videoConstraints.height;
+        const videoNode = document.querySelector('#video');
+    navigator.getUserMedia({audio:true,video:videoConstraints},function(stream){
+        videoNode.srcObject = stream;
+    },function(error){
+        console.log(error);
+    })  //获取用户的媒体终端
+    document.querySelector('#photo').addEventListener('click',function(event){
+        event.preventDefault();//阻止默认行为，继续做功能
+        //拍屏
+        //sream canvas 画布
+        context.drawImage(videoNode,0,0,canvas.width,canvas.height);
+        //把图片下载到本地？
+        download(canvas.toDataURL('image/jpeg'));//输出一个图片
+    })
+    function download(src){
+        // console.log(src);
+        // js 模拟点击
+        const  a = document.createElement('a')
+        a.setAttribute('download',new Date());
+        a.href = src;
+        a.click();
+    }
+    </script>
+</body>
+
+</html>
