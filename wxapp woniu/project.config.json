@@ -13,12 +13,14 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.5",
-	"appid": "wxe6f05062714ce0f3",
-	"projectname": "wxappLearn",
+	"appid": "wx9b4f41b9c3a6d842",
+	"projectname": "wxapp%20woniu",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
