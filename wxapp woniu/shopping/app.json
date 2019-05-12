@@ -17,10 +17,10 @@
     "enabluePullDownRefresh": true
   },
   "tabBar": {
-    "color": "#b7b7b7",
-    "selectedColor": "#AB956D",
-    "borderStyle": "black",
-    "backgroundColor": "#f5f5f5",
+    "color": "#000",
+    "selectedColor": "#ed5160",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
     "selectedindex": 1,
     "list": [
       {

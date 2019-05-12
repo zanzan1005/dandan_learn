@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/categories/categories",
+    "pages/index/index",
+    
     "pages/news/news",
     "pages/mine/mine"
   ],
@@ -10,6 +11,38 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "58到家",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#858c95",
+    "selectedColor": "#ed5160",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "selectedindex": 1,
+    "position":"bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index_logo.png",
+        "selectedIconPath":"images/index_logoS.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/categories/categories",
+        "iconPath": "images/categories.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "images/news.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/mine.png",
+        "selectedIconPath":"images/mineS.png",
+        "text": "我的"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }
