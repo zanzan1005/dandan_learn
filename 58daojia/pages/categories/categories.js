@@ -18,12 +18,12 @@ Page({
       {name:'汽车',id:'qiche'},
       {name:'便民服务',id:'bianmin'}
     ],
-    Dailycleaning:[
+    dailyCleaning:[
       {name:'日常保洁',id:'richang'},
       {name:'深度保洁',id:'shendu'},
       {name:'周期保洁',id:'zhouqi'}
     ],
-    Householdcleaning:[
+    householdCleaning:[
       {name:'洗衣机',id:'xiyiji'},
       {name:'油烟机',id:'youyanji'},
       {name:'空调',id:'kongtiao'},
@@ -32,7 +32,7 @@ Page({
       {name:'饮水机',id:'yinshuiji'},
       {name:'微波炉',id:'weibolu'}
     ],
-    Homecleaning:[
+    homeCleaning:[
       {name:'擦玻璃',id:'caboli'},
       {name:'洗纱窗',id:'xishachuang'},
       {name:'洗窗帘',id:'xichuanglian'},
@@ -40,14 +40,14 @@ Page({
       {name:'床垫清洗',id:'chuangdianqingxi'},
       {name:'地毯清洗',id:'maotanqingxi'}
     ],
-    Airtreatment:[
+    airTreatment:[
       {name:'房屋消毒',id:'fangwuxiaodu'},
       {name:'除甲醛',id:'chujiaquan'},
       {name:'除异味',id:'chuyiwei'},
       {name:'甲醛检测',id:'jiaquanjiance'},
       {name:'新风系统',id:'xinfengxitong'}
     ],
-    Homemaintenance:[
+    homeMaintenance:[
       {name:'家具保养',id:'jiajubaoyang'},
       {name:'沙发保养',id:'shafabaoyang'},
       {name:'墙面保养',id:'qiangmianbaoyang'},
@@ -55,7 +55,7 @@ Page({
       {name:'瓷砖美缝',id:'cizhuanmeifeng'},
       {name:'地暖清洗',id:'dinuanqingxi'}
     ],
-    Removinginsects:[
+    removingInsects:[
       {name:'除虫灭鼠',id:'chuchongmieshu'},
       {name:'除螨虫',id:'chumanchong'}
     ],
@@ -72,13 +72,13 @@ Page({
       {name:'月嫂',id:'yuesao'},
       {name:'育儿嫂',id:'yuersao'}
     ],
-    Housemoving:[
+    houseMoving:[
       {name:'普通搬家',id:'putongbanjia'},
       {name:'日式搬家',id:'rishibanjia'},
       {name:'企业搬家',id:'qiyebanjia'},
       {name:'跨省搬家',id:'kuashengbanjia'}
     ],
-    Rushpipe:[
+    rushPipe:[
       {name:'马桶疏通',id:'matongshutong'},
       {name:'地漏疏通',id:'diloushutong'},
       {name:'洗菜盆疏通',id:'xicaipenshutong'},
@@ -87,31 +87,31 @@ Page({
       {name:'蹲坑疏通',id:'dunkengshutong'},
       {name:'小便池疏通',id:'xiaobianchishutong'}
     ],
-    Waterwaymaintenance:[
+    waterwayMaintenance:[
       {name:'水管维修',id:'shuiguanweixiu'},
       {name:'龙头维修',id:'longtouweixiu'},
       {name:'阀门维修',id:'famenweixiu'}
     ],
-    Circuitmaintenance:[
+    circuitMaintenance:[
       {name:'开关维修',id:'kaiguanweixiu'},
       {name:'插座维修',id:'chazuoweixiu'},
       {name:'电路检测改造',id:'dianlujiancegaizao'},
       {name:'灯具维修',id:'dengjuweixiu'}
     ],
-    Leakageprevention:[
+    leakagePrevention:[
       {name:'全部服务',id:'quanbufuwu'},
       {name:'外墙防水',id:'waiqiangfangshui'},
       {name:'厨卫防水',id:'chuweifangshui'},
       {name:'阳台防水',id:'yangtaifangshui'},
       {name:'房屋漏水',id:'fangwuloushui'}
     ],
-    MaintenanceCurtain:[
+    maintenanceCurtain:[
       {name:'窗帘杆维修',id:'chuanglianganweixiu'},
       {name:'晾衣架维修',id:'liangyijiaweixiu'},
       {name:'地热暖气维修',id:'direnuanqiweixiu'},
       {name:'五金配件维修',id:'wujinpeijianweixiu'}
     ],
-    Kitchenware:[
+    kitchenWare:[
       {name:'马桶维修',id:'matongweixiu'},
       {name:'地漏维修',id:'dilouweixiu'},
       {name:'洗手盆维修',id:'xishoupenweixiu'},
@@ -122,13 +122,70 @@ Page({
       {name:'淋浴房维修',id:'linyufangweixiu'},
       {name:'厨卫挂件维修',id:'chuweiguajianweixiu'}
     ],
-    Wallsurface:[
+    wallSurface:[
       {name:'全部服务',id:'quanbufuwu'},
       {name:'地毯维修',id:'ditanweixiu'},
       {name:'吊顶',id:'diaoding'},
       {name:'外墙保湿',id:'waiqiangbaoshi'},
-      {name:''}
+      {name:'地板打蜡',id:'dibandala'},
+      {name:'地板维修',id:'dibanweixiu'},
+      {name:'瓷砖石材',id:"cizhuanshicai"},
+      {name:'地毯保养',id:'ditanbaoyang'},
+      {name:'幕墙维修',id:'muqiangweixiu'},
+      {name:'墙面刷新',id:'qiangmianshuaxin'},
+      {name:'打孔',id:'dakong'},
+      {name:'幕墙清洁',id:'muqiangqingjie'},
+      {name:'踢脚线',id:'tijiaoxian'},
+      {name:'壁纸软包',id:'bizhiruanbao'}
     ],
+    pestControl:[
+      {name:'全部服务',id:'quanbufuwu'},
+      {name:'除甲醛',id:'chujiaquan'},
+      {name:'除异味',id:'chuyiwei'},
+      {name:'除虫灭鼠',id:'chuchongmieshu'},
+      {name:'新风系统',id:'xinfengxitong'}
+    ],
+    RenovationDemolition:[
+      {name:'全部服务',id:'quanbufuwu'},
+      {name:'家电拆除',id:'jiadianchaichu'},
+      {name:'垃圾清运',id:'lajiqingyun'},
+      {name:'装修监理',id:'zhuangxiujianli'},
+      {name:'墙体拆除',id:'qiangtichaichu'},
+      {name:'灯具拆除',id:'dengjuchaichu'},
+      {name:'装修拆除',id:'zhuangxiuchaichu'},
+      {name:'收房验房',id:'shoufangyanfang'},
+      {name:'家具拆除',id:'jiajuchaichu'},
+      {name:'房屋翻新',id:'fangwufanxin'}
+    ],
+    householdAppliances:[
+      {name:'全部服务',id:'quanbufuwu'},
+      {name:'电视维修',id:'dianshiweiixiu'},
+      {name:'空调维修',id:'kongtiaoweixiu'},
+      {name:'洗衣机维修',id:'xiyijiweixiu'},
+      {name:'冰箱维修',id:'bingxiangweixiu'},
+      {name:'热水器维修',id:'reshuiqiweixiu'}
+    ],
+    KitchenMaintenance:[
+      {name:'燃气灶维修',id:'ranqizaoweixiu'},
+      {name:'油烟机维修',id:'youyanjiweixiu'},
+      {name:'微波炉维修',id:'weiboluweixiu'},
+      {name:'电饭煲维修',id:'dianfanbaoweixiu'},
+      {name:'电磁炉维修',id:'dianciluweixiu'},
+      {name:'消毒柜维修',id:'xiaoduguiweixiu'},
+      {name:'烤箱维修',id:'kaoxiangweixiu'},
+      {name:'电压力锅维修',id:'dianyaliguoweixiu'},
+      {name:'咖啡机维修',id:'kafeijiweixiu'},
+      {name:'榨汁机维修',id:'zhazhijiweixiu'},
+      {name:'洗碗机维修',id:'xiwanjiweixiu'},
+      {name:'电炖锅维修',id:'diandunguoweixiu'},
+      {name:'料理机维修',id:'liaolijiweixiu'},
+      {name:'电烧烤炉',id:'dianshaokaolu'},
+      {name:'豆浆机维修',id:'doujiangjiweixiu'},
+      {name:'面包机维修',id:'mianbaojiweixiu'},
+      {name:'电饼铛维修',id:'dianbingchengweixiu'},
+      {name:'全部服务',id:'quanbufuwu'}
+    ],
+    
     isScorll:true,
     toView:'baojie',
     detail:[],
