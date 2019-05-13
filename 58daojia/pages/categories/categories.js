@@ -186,6 +186,7 @@ Page({
       {name:'全部服务',id:'quanbufuwu'}
     ],
     
+
     isScorll:true,
     toView:'baojie',
     detail:[],
