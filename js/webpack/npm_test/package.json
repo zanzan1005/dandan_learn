@@ -2,5 +2,19 @@
   "dependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.1.4"
-  }
+  },
+  "name": "npm_test",
+  "description": "- /nodemodules\r 不需要被提交的",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "mocha":"mocha tests/"    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
