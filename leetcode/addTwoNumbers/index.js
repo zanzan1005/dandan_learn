@@ -55,7 +55,7 @@ var addTwoNumbers = function(l1, l2) {
     ret[i] = new LinkedNode(ans[i]);
   }
   for(let i = 0,len = ans.length;i < len -1;i++){
-    ret[i].next = ret[i+1];
+    ret[i].next = ret[i+1];//指针
   }
   return ret[0];
   // return ans.join('');
