@@ -3,8 +3,8 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Login from '@/components/Login'
 import Main from '@/components/Main'
-import MainDeatil from '@/components/MainDetail'
-import UserList from '@components/UserList'
+import MainDetail from '@/components/MainDetail'
+import UserList from '@/components/UserList'
 
 Vue.use(Router)
 
@@ -27,8 +27,8 @@ export default new Router({
       children: [
         {
           path: '/',
-          name: MainDeatil,
-          component: MainDetail,
+          name: MainDetail,
+          component: MainDetail
         },
         {
           path: '/main/user-list',

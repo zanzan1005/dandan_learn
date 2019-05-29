@@ -12,7 +12,7 @@
 <script>
 export default {
   name: 'UserList',
-  data() {
+  data () {
     return {
       options: [
         {
@@ -282,8 +282,7 @@ export default {
           ]
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
-
