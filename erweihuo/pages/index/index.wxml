@@ -1,0 +1,8 @@
+<view class="title" bindtap="search">
+  <view class="search">
+    <view class="search_arr">
+      <icon class="searchtion" size='20' type='search'></icon>
+      <input type="" disabled placeholder="请输入关键字" value="{{searchValue}}" />
+    </view>
+  </view>
+</view>

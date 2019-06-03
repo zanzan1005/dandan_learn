@@ -2,7 +2,6 @@
   "pages": [
     "pages/categories/categories",
     "pages/index/index",
-    
     "pages/news/news",
     "pages/mine/mine"
   ],
