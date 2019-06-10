@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hashchange 实现前端路由</title>
+</head>
+<body>
+  <a href="#top">回到首页</a>
+  <a href="javascript:;" data-href="/">home</a>
+  <a href="javascript:;" data-href="/">book</a>
+  <a href="javascript:;" data-href="/">movie</a>
+  <div id="content"></div>
+  <!-- javascript:;干掉href属性 -->
+  <script>
+    // hashchange 导航
+    // 内容显示区域
+  class Router {
+    constructor (options) {
+      this.init();
+    }
+    //链接的点击事件
+    bindEvent() {}
+    init() {
+      window.addEventListener('hashchange', this.updateView.bind(this));
+    }
+    updateView() {
+      // console.log('updated');
+      //首页 #goods 商品 #detail 详情页
+      const hashTag = window.location.hash.slice(1) || '/'
+      //加一个容错性
+    }
+  }
+  new Router([
+    {
+      path: '/',
+      cpmponent: 'home'
+    },
+    {
+      path: '/book',
+      component:'book'
+    },
+    {
+      path: '/movie',
+      component: 'movie'
+    }
+  ]);
+  </script>
+</body>
+</html>
