@@ -52,6 +52,46 @@ html 结构 css 样式
   p::after{
     content:'after';
   }
+7. 块元素
+    第一个字母/字 first-letter 
+    p::first{
+      ...
+    }
+    第一行 first-line
+    p::first-line{
+      ...
+    }
+8. 伪类 （状态的改变）
+    由于操作的不同状态发生改变（a,input标签）
+
+- 背景
+  background-color:red (颜色)
+  background-image:url('...') 背景图
+  background-repeat:(repeat-x,repeat-y,no-repeat) 平铺
+  background-position:(x轴)100px (y轴)100px
+  x:left center right
+  y:top ceneter bottom
+
+- 字体
+  font-family:"宋体","黑体","微软雅黑";
+  多个字体之间用逗号隔开
+  font-size:30px 16px=1em(系统默认设置为16px)
+  font-weight:100~900(normal,lighter,bold)
+  font-style:(normal,italic)(普通，斜体)
+  line-hight:60px(行高)
+
+- 其他css
+  color:red;文字颜色
+  letter-spacing:0px -50px 60px（字符间距，可以为正值，和负值）
+  word-spacing:(空格间距，只会影响空格)
+  direction:ltr rtl(从右到左 从左到右)书写习惯
+  text-decoration:none line-through overline underline(加线)
+  text-align:center left right justify(两端对齐)(默认状态为左对齐left)
+  text-indent:60px(缩进空格)
+  
+
+
+
 
 
 
