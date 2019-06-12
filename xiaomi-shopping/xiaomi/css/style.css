@@ -1,6 +1,13 @@
-body{
+body ,ul , li{
   margin: 0;
   padding: 0;
+}
+ul{
+  list-style-type: none;
+}
+body{
+  font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+  height: 2500px;
 }
 .container{
   /* border:1px solid #333; */
@@ -43,6 +50,113 @@ body{
 .topbar-info,.topbar-cart{
   float:right;
 }
-.topbar-cart{
-  
+.topbar-cart a{
+  display:block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color:#424242;
+  width: 120px;
 }
+.topbar-cart a:hover{
+  background-color: #fff;
+  color:#ff6700;
+}
+.topbar-cart span{
+  margin-left: -4px;
+  font-size: 12px;
+}
+.topbar-info{
+  margin-right: 15px;
+}
+.topbar-info a{
+  float:left;
+  padding: 0 5px;
+  line-height: 40px;
+  height: 40px;
+}
+.topbar-info span{
+  font-size: 12px;
+  font-family: sans-serif;
+  float:left;
+  color:#424242;
+  text-align: center;
+}
+.topbar-info .sep{
+  padding: 0 10px;
+}
+
+/* header */
+
+.header{
+  height: 100px;
+}
+.header-container{
+  margin: 0 auto;
+  width: 1226px;
+}
+.header-logo{
+  float:left;
+  width: 62px;
+  height: 55px;
+  margin-top: 25px;
+  /* border:1px solid black; */
+}
+.header-logo a{
+  display:block;
+  width: 55px;
+  height: 55px;
+  background:#ff6700 url(../img/mi-logo.png) no-repeat 50% 50%;
+}
+.header-logo a.lr{
+  text-align: left;
+  text-indent:-9992em;
+}
+
+/* 导航 */
+
+.header-nav{
+  float:left;
+  width: 820px;
+  height: 100px;
+  border:1px solid black;
+}
+.header-nav .nav-list{
+  width: 820px;
+  height: 88px;
+  font-size: 16px;
+}
+.header-nav .nav-list .nav-category{
+  float:left;
+  width: 127px;
+  padding: 0 15px 0 0;
+}
+.header-nav .nav-list .nav-category a{
+  display:block;
+  text-align: right;
+  padding: 26px 0 38px;
+  color:#333;
+}
+.header-nav .nav-list .nav-item{
+  float:left;
+}
+.header-nav .nav-list .nav-item a{
+  display:block;
+  padding: 26px 10px 38px;
+  color:#333;
+}
+.header-nav .nav-list .nav-item a:hover{
+  color:#ff6700;
+}
+.header-nav a{
+  text-decoration: none;
+}
+.header-search{
+  float:right;
+  width: 296px;
+  height: 50px;
+  margin-top: 22px;
+  border:1px solid black;
+}
+
+
