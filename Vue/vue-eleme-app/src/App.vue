@@ -64,6 +64,6 @@ export default {
       color rgb(77,85,93)
       text-decoration none
 
-      &.active 
+      &.router-linkactive 
         color rgb(240,20,20)
 </style>
