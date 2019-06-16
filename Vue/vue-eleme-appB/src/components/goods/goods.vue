@@ -112,6 +112,7 @@ export default {
       let el = foodList[index]
       this.foodsScroll.scrollToElement(el, 300)
     },
+    
     addFood(target) {
       this._drop(target);
     },
