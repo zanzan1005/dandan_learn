@@ -216,6 +216,7 @@ body{
 .seckill .seckill-container{
   margin: 0 auto;
   width: 1226px;
+  height: 50px;
 }
 .seckill .seckill-nav{
   margin: -60px 0 22px;
@@ -233,8 +234,19 @@ body{
   text-align: center;
   cursor: pointer;
 }
+.seckill-nav li em{
+  display: inline-block;
+  font-style: normal;
+  font-size: 18px;
+}
 .seckill-nav .active {
   background: #f1393a;
+  height: 68px;
+}
+.seckill-goods li{
+  width: 400px;
+  height: 190px;
+  background-color: #fff;
 }
 
 
