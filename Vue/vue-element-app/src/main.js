@@ -4,18 +4,16 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
-import ratings from '@/components/ratings/ratings'
-
-import './common/stylus/index.styl'
 
 Vue.config.productionTip = false
-Vue.prototype.$http = axios // 将axios挂载到vue的原型链上
+Vue.prototype.$http = axios
+
+Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  ratings,
   components: { App },
   template: '<App/>'
 })
