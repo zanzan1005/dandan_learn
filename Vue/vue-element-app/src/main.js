@@ -6,7 +6,7 @@ import router from './router'
 import axios from 'axios'
 
 Vue.config.productionTip = false
-Vue.prototype.$http = axios
+Vue.prototype.$http = axios //将axios 挂载到Vue的原型链上
 
 Vue.config.productionTip = false
 
