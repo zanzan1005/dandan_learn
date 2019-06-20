@@ -8,15 +8,33 @@
       <i class="icon">&#xe63c;</i>
       </router-link>
     </v-header>
+    <!-- tab -->
+    <v-tab>
+
+    </v-tab>
+    <keep-alive>
+      <router-link to=""></router-link>
+    </keep-alive>
+    <!-- 缓存页面 -->
+    <!-- play 整个播放页面-->
+    <!-- sidebar -->
+    <v-sidebar>
+
+    </v-sidebar>
+    <router-link to=""></router-link>
   </div>
 </template>
 
 <script>
 import header from '@/components/header/header'
+import tab from '@/components/tab'
+import sidebar from '@/components/sidebar'
 export default {
   name: 'App',
   components: {
-    'v-header': header
+    'v-header': header,
+    'v-tab': tab,
+    'v-sidebar': sidebar
   }
 }
 </script>
