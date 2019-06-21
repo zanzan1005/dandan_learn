@@ -3,7 +3,7 @@
     <div class="header-icon" @click="leftEvent">
       <slot name="left-icon"></slot>
     </div>
-    <div class="header-cont">
+    <div class="header-cont" >
       <slot name="content"></slot>
     </div>
     <div class="header-right">
@@ -20,7 +20,9 @@ export default {
     return {}
   },
   methods:{
-    leftEvent(){}
+    leftEvent(){
+    this.$store.dispatch('setShowSidebar',true)
+    }
   }
 
 }

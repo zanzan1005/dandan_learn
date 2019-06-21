@@ -9,8 +9,8 @@
       </div>
       <div class="menu">
         <ul>
-          <li>
-            <router-link to="/user" @click="_hidebar">
+          <li  @click="_hidebar">
+            <router-link to="/user">
             <i class="icon">&#xe63c;</i>
             <span>个人中心</span>
             </router-link>
@@ -48,18 +48,29 @@
         </ul>
       </div>
     </div>
+    <div v-show="showSidebar" class="sidebar_mask" @click="_hidebar"></div>
   </div>
 </template>
 
 <script>
+import  { mapGetters } from 'vuex'
 export default {
   data () {
     return {
-     showSidebar: true
+    //  showSidebar: false
+    //放在自己页面上无法与其他页面交互
+
     }
   },
+  computed: {
+    ...mapGetters([
+      'showSidebar'
+    ])//ES6解构
+  },
   methods:{
-  _hidebar() {}  
+  _hidebar() {
+    this.$store.dispatch('setShowSidebar',false)
+  }  
   }
 }
 </script>
