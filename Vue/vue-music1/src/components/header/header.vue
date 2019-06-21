@@ -24,7 +24,6 @@ export default {
     this.$store.dispatch('setShowSidebar',true)
     }
   }
-
 }
 </script>
 

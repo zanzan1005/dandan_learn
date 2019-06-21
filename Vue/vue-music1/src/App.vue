@@ -13,7 +13,7 @@
 
     </v-tab>
     <keep-alive>
-      <router-link to=""></router-link>
+      <router-view></router-view>
     </keep-alive>
     <!-- 缓存页面 -->
     <!-- play 整个播放页面-->
@@ -22,6 +22,7 @@
 
     </v-sidebar>
     <router-link to=""></router-link>
+    <v-play></v-play>
   </div>
 </template>
 
@@ -29,12 +30,14 @@
 import header from '@/components/header/header'
 import tab from '@/components/tab'
 import sidebar from '@/components/sidebar'
+import play from '@/components/play'
 export default {
   name: 'App',
   components: {
     'v-header': header,
     'v-tab': tab,
-    'v-sidebar': sidebar
+    'v-sidebar': sidebar,
+    'v-play': play
   }
 }
 </script>
