@@ -70,7 +70,7 @@ export default {
   methods:{
   _hidebar() {
     this.$store.dispatch('setShowSidebar',false)
-  }  
+    }  
   }
 }
 </script>
