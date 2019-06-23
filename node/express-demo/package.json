@@ -8,7 +8,7 @@
   "main": "app.js",
   "devDependencies": {},
   "scripts": {
-    "dev":"cross-env PORT=1234 node app.js", 
+    "dev":"cross-env PORT=1234 node port" ,
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

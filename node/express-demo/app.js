@@ -3,19 +3,19 @@ var app = express();
 var router = express.Router();
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({
-  entended:true
+    entended:true
 }))
 router.get('/', function(req, res) {
   res.send('<h1>Hello World</h1>');
 })
 
-router.get('/:name',function(req,res) {
-  res.send('<h1> Hello ' + req.params.name + '</h1>');
+router.get('/:name', function(req, res) {
+  res.send('<h1>Hello ' + req.params.name + '</h1>');
 })
 
-router.post('/',function(req,res){
+router.post('/', function(req, res) {
   var name = req.body.name;
-  res.json({message:'Hello' + name})
+  res.json({message: 'Hello ' + name });
 })
 
 var port = process.env.PORT || 8080;
