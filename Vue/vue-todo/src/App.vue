@@ -1,23 +1,38 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+<div class="wrapper">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="plan-board">
+       <a class="navbar-brand" href="#">
+         <i class="glyphicon glyphicon-time">计划板</i>
+         </a>
+    </div>
+    <div class="index">
+      <ul class="nav navbar-nav">
+          <li><router-link to="/home">首页</router-link></li>
+          <li><router-link to="/time-entries">计划列表</router-link></li>
+        </ul>
+    </div>
   </div>
+</nav>
+<v-time></v-time>
+<div class="home">
+  <router-view></router-view>
+</div>
+</div>
+
 </template>
 
 <script>
+import time from '@/components/time'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    'v-time': time
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
