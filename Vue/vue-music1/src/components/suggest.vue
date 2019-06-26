@@ -44,8 +44,27 @@ export default {
     'v-scroll': scroll
   },
   methods: {
-    searchMore() {},
-    listScroll() {},
+    searchMore() {
+      if (!this.hasMore) {
+        return
+      }
+      this.page++
+      this.fetchResult(this.page)
+    },
+    listScroll() {
+      this.$emit('listScroll')//emit向外界抛出方法
+    },
+    selectItem(item) {
+      this.$emit('select',item)
+    },
+     getDisplayName(item){
+      return `${item.name}-${item.artists[0]&&item.artists[0].name}`
+    },
+    _checkMore (data) {
+      if (data.songs.length < 12 || ((this.page - 1) * limit) >= data.songCount)  {
+        this.hasMore = false
+      }
+    },
     search (){
       this.page = 1
       this.hasMore = true
@@ -65,6 +84,8 @@ export default {
       api.MusicSearch(params).then(res => {
         if(res.code === 200) {
           console.log(res)
+          this.result = [...this.result,...res.result.songs]
+          this._checkMore(res.result)
         }
       })
     },
@@ -82,6 +103,40 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped lang="stylus">
+@import "../assets/css/function.styl"
+.suggest 
+  height 100%
+  overflow hidden
+  .suggest-list 
+    padding 0 px2rem(60px)
+    .suggest-item 
+      display flex
+      align-items center
+      line-height px2rem(80px)
+    .icon 
+      flex 0 0 px2rem(60px)
+      width px2rem(60px)
+      font-size 14px
+      color hsla(0,0%,100%,.3)
+    .name 
+      flex 1
+      font-size 14px
+      color hsla(0,0%,100%,.3)
+      overflow hidden
+      .text 
+        white-space nowrap
+        overflow hidden
+        text-overflow ellipsis
+    .loading-wraper 
+      height px2rem(80px)
+  .no-result-wrapper 
+    position absolute
+    width 100%
+    top 50%
+    transform translateY(-50%)
+    span 
+      font-size 14px
+      color hsla(0,0%,100%,.3)
 </style>
+
