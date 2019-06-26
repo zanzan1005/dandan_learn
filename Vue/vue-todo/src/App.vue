@@ -19,6 +19,10 @@
 <div class="home">
   <router-view></router-view>
 </div>
+<div class="time-entries">
+  <router-view></router-view>
+</div>
+
 </div>
 
 </template>

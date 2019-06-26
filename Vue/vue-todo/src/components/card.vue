@@ -18,8 +18,8 @@ export default {
 .jumbotron{
   float: right;
   width: 75%;
-  height: 300px;
+  height: 235px;
   margin-top: 70px;
-  margin-left: 100px;
+  margin-left: 70px;
 }
 </style>
