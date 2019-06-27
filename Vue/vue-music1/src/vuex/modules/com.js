@@ -3,22 +3,23 @@ import * as types from '../types'
 //把所有东西从../types里面引入作为变量types
 
 const state = {
-  showSidebar: true,
-  fullScreen: true,
+  showSidebar: false,
+  fullScreen: false,
   searchHistory: [123]
 }//vuex 的数据源
 
 const mutations = {
-  [types.COM_SHOW_SIDE_BAR] (state,status) {
+  [types.COM_SHOW_SIDE_BAR] (state, status) {
     state.showSidebar = status
-  },//function
-  [types.SET_FULL_SCREEN] (state,status) {
+  },
+  [types.SET_FULL_SCREEN] (state, status) {
     state.fullScreen = status
   },
-  [types.COM_SAVE_SEARCH] (state) {
+  [types.COM_SAVE_SEARCH_HISTORY] (state) {
     state.searchHistory = state
   }
-}//更改 Vuex 的 store 中的状态的唯一方法是提交 mutation
+}
+//更改 Vuex 的 store 中的状态的唯一方法是提交 mutation
   
 
 const actions = {
@@ -29,18 +30,19 @@ const actions = {
     // let playList = state.playList.slice()
     commit(types.SET_FULL_SCREEN,status)
   },
-  saveSearchHistory({ commit, state }, query) {
+  saveSearchHistory ({commit, state}, query) {
     let searchHistory = [query, ...state.searchHistory.slice()]
     searchHistory = [...new Set(searchHistory)]
-    commit(types.COM_SAVE_SEARCH, searchHistory)
+    commit(types.COM_SAVE_SEARCH_HISTORY, searchHistory)
   }
 }
 
 const getters = {
-  showSidebar:state => state.showSidebar,
-  fullScreen :state => state.fullScreen,
+  showSidebar: state => state.showSidebar,
+  fullScreen: state => state.fullScreen,
   searchHistory: state => state.searchHistory
-}//不能进行其他操作，除了取出数据源
+}
+//不能进行其他操作，除了取出数据源
 
 
 export default {

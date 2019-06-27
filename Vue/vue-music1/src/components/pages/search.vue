@@ -102,7 +102,7 @@ export default {
     blurInput() {},
     saveSearch(data) {
       console.log(data);
-      this.$store.dispatch('saveSearch')
+      this.$store.dispatch('saveSearchHistory')
     },
     _getHotKey() {
       api.HotSearchKey().then(res => {
