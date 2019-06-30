@@ -22,6 +22,18 @@ Page({
       currentTab: e.currentTarget.dataset.idx
     })
   },
+  oneplus7Pro: function(e){
+
+  },
+  oneplus7: function(e){
+
+  },
+  oneplus7good: function(){
+
+  },
+  oneplus7proProtect: function(){
+
+  },
 
   onLoad: function () {
 

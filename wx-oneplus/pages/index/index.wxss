@@ -33,3 +33,39 @@ body,html{
   right: 0;
   height: 4rpx;
 }
+.content{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+}
+.oneplus7Pro{
+  width: 45%;
+  height: 100px;
+}
+.image{
+  width: 200px;
+  height: 200px;
+}
+.title{
+  font-weight: 350;
+  margin-left: 20px;
+}
+.price{
+  font-weight: 350;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.oneplus7{
+  width: 45%;
+  height: 100px;
+}
+.oneplus7Good{
+  margin-top: 150px;
+  width: 45%;
+  height: 100px;
+}
+.oneplus7ProShell{
+  margin-top: 150px;
+  width: 45%;
+  height: 100px;
+}

@@ -11,8 +11,36 @@
 </scroll-view>
  
 <!--商品精选-->
-<view hidden="{{currentTab!==0}}">
-  tab_01
+<view hidden="{{currentTab!==0}}" class="content">
+  <view class="oneplus7Pro">
+    <image src="../../images/title.jpg" class="image" bindtap="oneplus7pro"/>
+    <view class="desc">
+      <view class="title">Oneplus 7 Pro</view>
+      <view class="price">最低价 ￥3999</view>
+    </view> 
+  </view>
+  <view class="oneplus7">
+    <image src="../../images/title2.jpg" class="image" bindtap="oneplus7Pro"/>
+    <view class="desc">
+      <view class="title">Oneplus 7</view>
+      <view class="price">最低价 ￥2999</view>
+    </view> 
+  </view>
+  <view class="oneplus7Good">
+    <image src="../../images/title3.jpg" class="image" bindtap="oneplus7Pro"/>
+    <view class="desc">
+      <view class="title">Oneplus 7 加油套装</view>
+      <view class="price">最低价 ￥345.1</view>
+      <view class="minPrice">最低价 ￥ 406</view>
+    </view> 
+  </view>
+  <view class="oneplus7ProShell">
+    <image src="../../images/title4.jpg" class="image" bindtap="oneplus7Pro"/>
+    <view class="desc">
+      <view class="title">Oneplus 7 Pro个性保护壳</view>
+      <view class="price">最低价 ￥99</view>
+    </view> 
+  </view>
 </view>
  
 <!--耳机-->
