@@ -1,1 +1,14 @@
-/* pages/find/find.wxss */
+body,html{
+  width: 0;
+  padding: 0;
+}
+.header{
+  display: flex;
+  margin-top: -100px;
+}
+.title{
+  display: inline-block;
+  margin-left: 45px;
+  font-weight: 100;
+  font-size: 16px;
+}

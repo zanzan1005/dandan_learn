@@ -6,7 +6,7 @@
   </block>
 </swiper>
 
-<scroll-view class="navbar" scroll-x="true">
+<scroll-view class="navbar" scroll-x="true" style="width: 100%">
   <view wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</view>
 </scroll-view>
  

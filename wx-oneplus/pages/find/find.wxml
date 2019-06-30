@@ -1,2 +1,8 @@
-<!--pages/find/find.wxml-->
-<text>pages/find/find.wxml</text>
+<view class="container">
+  <scroll-view class="header" scroll-x 
+     scroll-left="1" scroll-into-view="" scroll-with-animation="true">
+    <view class="title">零售店</view>
+    <view class="title">精彩活动</view>
+    <view class="title">发现更多</view>
+  </scroll-view>
+</view>
