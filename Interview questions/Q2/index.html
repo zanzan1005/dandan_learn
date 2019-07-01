@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 关于call,bind,apply -->
+  <!-- js中的call(), apply()和bind()是Function.prototype下的方法，都是用于改变函数运行时上下文，最终的返回值是你调用的方法的返回值，若该方法没有返回值，则返回undefined。 -->
+  <script>
+  var a = {
+    user: '蜗牛',
+    fn: function (n) {
+      console.log(this.user)
+      console.log(n + 1)
+    }
+  }
+  var b = a.fn
+  b.call(a,5)//b的作用域从全局变为a .call支持多个参数
+  //(第一个参数，要变去的作用域；第二个参数能拿到方法里去用)
+  
+
+  </script>
+</body>
+</html>
