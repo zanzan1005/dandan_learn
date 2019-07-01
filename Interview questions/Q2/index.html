@@ -12,15 +12,24 @@
   <script>
   var a = {
     user: '蜗牛',
-    fn: function (n) {
+    fn: function (n,m) {
       console.log(this.user)
-      console.log(n + 1)
+      console.log(n + m)
     }
   }
   var b = a.fn
-  b.call(a,5)//b的作用域从全局变为a .call支持多个参数
+  // b.call(a)
+  //b的作用域从全局变为a .call支持多个参数
   //(第一个参数，要变去的作用域；第二个参数能拿到方法里去用)
-  
+
+  // b.apply(a,[0,2])
+  //事实上apply 和 call 的用法几乎相同, 
+  //唯一的差别在于：当函数需要传递多个变量时, apply 可以接受一个数组作为参数输入, call 则是接受一系列的单独变量。
+
+  // b.bind(a)()
+  var c = b.bind(a)
+  c(0,2);
+  //返回一个全新的函数
 
   </script>
 </body>
