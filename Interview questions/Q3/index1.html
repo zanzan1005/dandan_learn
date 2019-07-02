@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>7.2</title>
+</head>
+<body>
+  <!-- 浅拷贝和深拷贝 -->
+  <script>
+  //浅拷贝,会受原本数据的影响
+  let obj = {
+    name: '蜗牛',
+    age: 26,
+    like: ['sing','rapper']
+  }
+  obj.name = '蜗牛小时'
+  obj.like.push('coding')
+  let obj2 = Object.assign({},obj)//Es6的对象拼接
+  // let obj3 = Object.assign(obj2,like)
+  // console.log({...obj});
+  let obj4 = JSON.parse(JSON.stringify(obj))
+  obj.name = 'woniu'
+  console.log(obj4)
+  </script>
+</body>
+</html>
