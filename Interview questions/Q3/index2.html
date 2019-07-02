@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>深拷贝的原理</title>
+</head>
+<body>
+  <script>
+  //深拷贝的原理
+  function deepClone (obj , hash = new WeakMap) { //使用递归的方式来层层获取
+  if (obj instanceof RegExp) {
+    return RegExp(obj)
+  }
+  if (obj instanceof Date) {
+    return Date(obj)
+  } 
+  if (obj === null || typeof obj === 'object' ){
+    //如果不复杂的数据类型，直接返回
+    return obj
+  }
+  if (hash.has(obj)){
+    return hash.get(obj)
+  }
+  //如果obj是数组，那么obj.constructor 是 [function: Array]
+  //如果obj是对象，那么obj.constructor 是 [function: Objject]
+  let t = new obj.constructor()
+  hash.set(obj,t)//往t里面塞值
+  for (let key in obj) {
+    //递归
+    if (obj.hasOwnProperty(key)){
+      //hasOwnProperty表示是否有自己的属性
+      t[key] = deepClone(obj[key],hash)
+    }
+  }
+}
+  </script>
+</body>
+</html>
