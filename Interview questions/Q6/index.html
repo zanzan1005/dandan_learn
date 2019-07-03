@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>防抖</title>
+</head>
+<body>
+  <div class="debounce">
+    <button id="submit">提交</button>
+  </div>
+  <script>
+  //   function test(){
+  //     console.log('success')
+  //   }
+  // let oSubmit = document.getElementById('submit')
+  // oSubmit.addEventListener('click',function(){
+  //   test()
+  // })
+
+  //防抖节流
+  function debounce(fn,time) {
+    let previous = 0,timer = null;
+    //将debounce处理结果当作函数返回
+    return function(...args) {
+      //获取当前事件，转换成时间戳，单位毫秒
+      let now = +new Date()
+
+      //判断上次触发的时间和本次触发的事件差
+      if (now - previous < time) {
+        //如果小于则本次触发设立一个新的定时器
+        //定时器事件结束后执行fn
+        if(timer) clearTimeout(timer)
+      }
+    }
+  }
+  </script>
+</body>
+</html>
