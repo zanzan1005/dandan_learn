@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>instance of</title>
+</head>
+
+<body>
+  <script>
+    let a = 'hello',
+      b = 123,
+      c = true,
+      d = undefined,
+      e = null,
+      // ------
+      f = {},
+      g = [],
+      h = function () { };
+      // console.log(b instanceof(Number))
+
+
+
+
+
+      //显式原型 prototype  隐式原型 __proto__
+      function Student(name) {
+        this.name = name
+        //constructor 自带一个name属性
+        Student.prototype.Setage = function() {
+          this.age = 18
+        } 
+      }
+      let wn = new Student('wn')
+        console.log(wn.__proto__) //__proto__是每一个实例都会有的
+        console.log(Student.prototype) //只有function 有
+        //wn.__proto__ === Student.prototype
+
+        //instance of原理
+        function fn () {}
+        function instance_of(L,R) {
+          let O = R.prototype
+          L = L.__proto__
+          while (true) {
+            if (L === null) { //已经找到顶了
+              return false
+            }
+            if (O === L) {
+              return true
+            }
+            L = L.__proto__
+          }
+        }
+        console.log(instance_of(f,Array))
+
+        //准确判断数据类型
+        Object.prototype.toString.call()
+        //Object.prototype.toString取得对象的一个内部属性
+        //然后依据这个内部属性，返回一个'[object Array]'
+        //.call()将作用域放到[object Array]里面去，我们就可以取得任何对象的属性
+        //然后把类型检测转换为字符串比较，达到目的
+        console.log(Object.prototype.toString.call([]))
+  </script>
+</body>
+
+</html>
