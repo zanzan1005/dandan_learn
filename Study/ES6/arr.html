@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>展开数组/收集剩余参数</title>
+</head>
+<body>
+  <script>
+  let arr1 = [1,2,3]
+  let arr2 = [4,5,6]
+  let arr3 = [...arr1,...arr2]
+  console.log(arr3)
+
+  function array(a,b,...arr){
+    console.log(...arr)
+  }
+  array(1,2,75,88,999,445)
+  //必须是最后一个参数
+
+  </script>
+</body>
+</html>
