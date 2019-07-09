@@ -19,7 +19,7 @@ class App extends Component {
     //通过原生JS 操作 DOM  
     this.refs.strRef.innerHTML = 'String ref';
     this.functionRef.innerHTML = 'Function ref';
-    this.objectRef.current.innerHTML = 'Object ref';
+    // this.objectRef.current.innerHTML = 'Object ref';
     // this.functionRef.addEventListener = ('click',() => {
     //   console.log('function ref clicked');
     // })
