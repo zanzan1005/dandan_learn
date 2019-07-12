@@ -10,10 +10,28 @@ class App extends Component {
       {name:"三狗",count:"30"}
       ]
     }
-    changeState = () => {
+    changeState = (newName) => {
       this.setState({
         Person:[
-          {name:"大猫",count:"100"},
+          {name:newName,count:"100"},
+          {name:"二猫",count:"200"},
+          {name:"三猫",count:"300"}
+          ]
+      })
+    }
+    changeCount = (newCount) => {
+      this.setState({
+        Person:[
+          {name:"大猫",count:newCount},
+          {name:"二猫",count:"200"},
+          {name:"三猫",count:"300"}
+          ]
+      })
+    }
+    nameChange = (event) => {
+      this.setState({
+        Person:[
+          {name:event.target.value,count:"222"},
           {name:"二猫",count:"200"},
           {name:"三猫",count:"300"}
           ]
@@ -23,9 +41,15 @@ class App extends Component {
     return ( 
       <div className="App">
         <h1>今天吃了火腿肠</h1>
-        <button onClick= {this.changeState} >更改数据源</button>
-      <Person name = {this.state.Person[0].name} count = {this.state.Person[0].count}/>
-      <Person name = {this.state.Person[1].name} count = {this.state.Person[1].count}/>
+        {/* <button onClick={() => this.changeState("goudan")} >更改数据源</button> */}
+        <button onClick={this.changeState.bind(this,"missu")}>更改数据</button>
+        {/* <button onClick={() => this.changeCount(1222)}>更改数字</button> */}
+        <button onClick={this.changeCount.bind(this,122225)}>更改数字</button>
+        
+      <Person changed = {this.nameChange}
+      name = {this.state.Person[0].name} count = {this.state.Person[0].count}/>
+      <Person myClick={this.changeCount.bind(this,25484)}
+      name = {this.state.Person[1].name} count = {this.state.Person[1].count}/>
       <Person name = {this.state.Person[2].name} count = {this.state.Person[2].count}/>
       <Person>肖战最帅！！！</Person>
     </div>
