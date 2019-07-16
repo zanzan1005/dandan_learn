@@ -8,10 +8,11 @@ const reduce = {
   type: 'DECREMENT'
 }
 // 加一部电影 ADD_FILM
+//type + payload
 function filmReducer(state = [],action) {
   switch (action.type) {
     case 'ADD_FILM':
-      return [...state,] //返回一份新的数据
+      return [...state,action.film] //返回一份新的数据
     default :
       return state;
   }
@@ -43,3 +44,11 @@ store.dispatch(add);
 store.dispatch(reduce);
 // console.log(store.getState());
 //每次dispatch 都会触发 reducer 一次
+store.dispatch({
+  type: 'ADD_FILM',
+  a: 1,
+  b: 2,
+  c: 3,
+  id: 0,
+  film: {name:'狮子王'}
+})
