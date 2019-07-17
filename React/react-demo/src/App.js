@@ -5,12 +5,13 @@ import Person from './Person/Person'
 class App extends Component {
   state = {
     Person: [
-      { name: "大狗", count: "10" },
-      { name: "二狗", count: "20" },
-      { name: "三狗", count: "30" }
+      { id: 1, name: "大狗", count: "10" },
+      { id: 2, name: "二狗", count: "20" },
+      { id: 3, name: "三狗", count: "30" }
     ],
     showPerson: false
   }
+
   changeState = (newName) => {
     this.setState({
       Person: [
@@ -20,6 +21,7 @@ class App extends Component {
       ]
     })
   }
+
   changeCount = (newCount) => {
     this.setState({
       Person: [
@@ -29,6 +31,7 @@ class App extends Component {
       ]
     })
   }
+
   nameChange = (event) => {
     this.setState({
       Person: [
@@ -38,12 +41,14 @@ class App extends Component {
       ]
     })
   }
+
   changecontent = () => {
     const show = this.state.showPerson
     this.setState({
       showPerson: !show
     })
   }
+
   delete = (Index) => {
     const Person = this.state.Person;
     Person.splice(Index,1)
@@ -51,14 +56,16 @@ class App extends Component {
       Person: Person
     })
   }
+
   render() {
     const style = {
-      border: "1px solid #c0c0c0",
       textAlign: "center",
       fontSize: "15px",
-      height: "50px",
-      width: "250px"
+      height: "40px",
+      width: "100px",
+      backgroundColor: "green"
     };
+
     let persons = null;
     if (this.state.showPerson) {
       persons = (
@@ -66,9 +73,10 @@ class App extends Component {
           {
             this.state.Person.map(( person,index ) => { 
               //person是拿到的每一个对象
-              return <Person key={index} myClick={() => this.delete(index)} name={person.name} count={person.count}/>
+              return <Person key={Person.id} changed={(event) => this.changed(event,person.id)}myClick={() => this.delete(index)} name={person.name} count={person.count}/>
             })
           }
+
           {/* <Person changed={this.nameChange}
             name={this.state.Person[0].name} count={this.state.Person[0].count} />
           <Person myClick={this.changeCount.bind(this, 25484)}
@@ -77,17 +85,28 @@ class App extends Component {
           <Person>肖战最帅！！！</Person> */}
         </div>
       )
+      style.backgroundColor = "red"
     }
-    return (
 
+    // const classes = ["red", "bold"].join(" ");
+    const classes = []
+    if (this.state.Person.length <= 2 ) {
+      classes.push("red")
+    } 
+    if (this.state.Person.length <= 1) {
+      classes.push("bold")
+    }
+
+    return (
       <div className="App">
-        <h1>今天吃了火腿肠</h1>
+        <h1>7.18 react </h1>
+        <h2 className={classes.join(" ")}>Hello React</h2>
         {/* <button onClick={() => this.changeState("goudan")} >更改数据源</button> */}
         {/* <button onClick={this.changeState.bind(this,"missu")}>更改数据</button> */}
-        <button onClick={this.changecontent}>内容折叠收起</button>
+        <button style={style} onClick={this.changecontent}>内容切换</button>
         {/* <button onClick={() => this.changeCount(1222)}>更改数字</button> */}
-        <button style={style}
-          onClick={this.changeCount.bind(this, 122225)}>更改数字</button>
+        {/* <button style={style}
+          onClick={this.changeCount.bind(this, 122225)}>更改数字</button> */}
           {persons}
         {
           // this.state.showPerson ?
