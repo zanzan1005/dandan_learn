@@ -11,7 +11,9 @@
     <button @click="add(10)">加10岁</button>
     <button @click="reduce(10)">减10岁</button>
     <p>My age is {{age}}</p>
-    <div class="box" @mousemove="move">{{x}},{{y}}</div>
+    <div class="box" @mousemove="move">{{x}},{{y}}
+      <span @mousemove.stop="">Stop Moving</span>
+    </div>
   </div>
 </template>
 
@@ -43,6 +45,10 @@ export default {
       // console.log(event)
       this.x = event.offsetX;
       this.y = event.offsetY;
+    },
+    stop: function (event) {
+      event.stopPropagation();
+      //组织冒泡事件
     }
   }
 }
@@ -54,5 +60,7 @@ export default {
   width: 500px;
   height: 400px;
   border: 1px solid #000;
+  line-height: 400px;
+  text-align: center;
 }
 </style>
