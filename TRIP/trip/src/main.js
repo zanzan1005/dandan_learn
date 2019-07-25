@@ -3,10 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store/index'
 import mandMobile from 'mand-mobile'
 import 'mand-mobile/lib/mand-mobile.css'
 
 Vue.use(mandMobile)
+// 请求拦截器
+import requestPlugin from './request/http.js'
+Vue.use(requestPlugin)
 
 Vue.config.productionTip = false
 
@@ -14,6 +18,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
