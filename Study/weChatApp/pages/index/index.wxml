@@ -1,0 +1,9 @@
+<view class="" hover-class="none" hover-stop-propagation="false">
+  这是index.wxml
+</view>
+<view>这是盒子1</view>
+<view>这是盒子2</view>
+<view>这是盒子3</view>
+<button type="primary">成功</button>
+<button type="warn">警告</button>
+<button type="default">普通</button>
