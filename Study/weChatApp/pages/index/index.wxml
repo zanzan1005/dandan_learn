@@ -4,6 +4,19 @@
 <view>这是盒子1</view>
 <view>这是盒子2</view>
 <view>这是盒子3</view>
+<text>相当于span</text>
+<text>相当于span</text>
+<text>相当于span</text>
+
 <button type="primary">成功</button>
 <button type="warn">警告</button>
 <button type="default">普通</button>
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circlre="{{circle}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
