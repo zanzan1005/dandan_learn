@@ -1,0 +1,56 @@
+<swiper class="swiper" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circle="{{circle}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="content">
+  <view class="props">
+    <image class="bed-image" src="../../images/content.jpg" />
+    <view class="name">床上三件套</view>
+    <view class="price">￥369.00</view>
+  </view>
+  <view class="props">
+    <image class="bed-image" src="../../images/content.jpg" />
+    <view class="name">床上三件套</view>
+    <view class="price">￥369.00</view>
+  </view>
+  <view class="props">
+    <image class="bed-image" src="../../images/content.jpg" />
+    <view class="name">床上三件套</view>
+    <view class="price">￥369.00</view>
+  </view>
+  <view class="props">
+    <image class="bed-image" src="../../images/content.jpg" />
+    <view class="name">床上三件套</view>
+    <view class="price">￥369.00</view>
+  </view>
+  <view class="props">
+    <image class="bed-image" src="../../images/content.jpg" />
+    <view class="name">床上三件套</view>
+    <view class="price">￥369.00</view>
+  </view>
+  <view class="props">
+    <image class="bed-image" src="../../images/content.jpg" />
+    <view class="name">床上三件套</view>
+    <view class="price">￥369.00</view>
+  </view>
+  <view class="props">
+    <image class="bed-image" src="../../images/content.jpg" />
+    <view class="name">床上三件套</view>
+    <view class="price">￥369.00</view>
+  </view>
+  <view class="props">
+    <image class="bed-image" src="../../images/content.jpg" />
+    <view class="name">床上三件套</view>
+    <view class="price">￥369.00</view>
+  </view>
+  <view class="props">
+    <image class="bed-image" src="../../images/content.jpg" />
+    <view class="name">床上三件套</view>
+    <view class="price">￥369.00</view>
+  </view>
+</view>

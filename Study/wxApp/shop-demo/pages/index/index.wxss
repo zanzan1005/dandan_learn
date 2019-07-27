@@ -1,0 +1,22 @@
+.swiper,.slide-image{
+  width: 100%;
+  height: 500rpx;
+}
+.bed-image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.price{
+  color: orange;
+}
+.props{
+  width: 33.3%
+}
+.content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
