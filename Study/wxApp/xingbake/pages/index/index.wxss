@@ -2,10 +2,12 @@ swiper{
   width: 100%;
   height: 550rpx;
 }
-.btn1{
+.header{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+.btn1{
   background-color: #fff;
   border: 1px solid #e9e9e9;
   width: 50%;
@@ -25,6 +27,63 @@ swiper{
 .text{
   color: green;
   font-size: 12px;
-  margin-left: 60rpx;
+  font-weight: bold;
+  margin-left: 150rpx;
+  margin-top: -45rpx;
+}
+.collection{
+  display: flex;
+  width: 35%;
+  height: 100rpx;
+  margin-top: 60rpx;
+  margin-left: 20rpx;
+}
+.btn2{
+  color: green;
+  font-size: 12px;
+  margin: 0 auto;  
   margin-top: 30rpx;
 }
+.star{
+  margin: 0 auto;  
+  margin-top: 30rpx;
+  width: 60rpx;
+  height: 40rpx;
+  border-radius: 30rpx;
+  background-color: #fff;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0 0 10px #bdbebd;
+}
+.container{
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.title{
+  font-size: 12px;
+}
+.cards{
+  
+  width: 45%;
+  border: 1px solid red;
+  height: 500rpx;
+}
+.props-image{
+  width: 100%;
+  height: 400rpx;
+}
+/* .content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 100rpx;
+}
+.cards{
+  width: 45%;
+  height: 400rpx;
+}
+.props-image{
+  width: 100%;
+  height: 300rpx;
+} */
