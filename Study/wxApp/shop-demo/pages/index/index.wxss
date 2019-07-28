@@ -10,7 +10,8 @@
   color: orange;
 }
 .props{
-  width: 33.3%
+  width: 33.3%;
+  margin-top: 30rpx;
 }
 .content{
   width: 100%;
