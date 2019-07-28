@@ -1,0 +1,4 @@
+<button type="primary" bindtap="toLogs">跳转到logs页面</button>
+<navigator url="/pages/logs/logs">
+  <button type="warn">跳转到logs页面</button>
+</navigator>

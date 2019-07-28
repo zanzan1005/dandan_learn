@@ -1,0 +1,30 @@
+swiper{
+  width: 100%;
+  height: 550rpx;
+}
+.btn1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border: 1px solid #e9e9e9;
+  width: 50%;
+  height: 100rpx;
+  margin-left: 60rpx;
+  margin-top: 60rpx;
+  border-radius: 50rpx;
+  box-shadow: 0 0 10px #bdbebd;
+}
+.moonCake{
+  width: 60rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+  margin-left: 50rpx;
+}
+.text{
+  color: green;
+  font-size: 12px;
+  margin-left: 60rpx;
+  margin-top: 30rpx;
+}
