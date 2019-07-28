@@ -1,0 +1,15 @@
+<view class="header">
+  <image class="banner" src="../../images/banner.jpg" />
+</view>
+
+<view class="content">
+  <view class="title">请朋友们喝咖啡</view>
+  <view class="card">
+    <image class="card-image" src="../../images/banner.jpg"/>
+    <view class="text">我想对你们说</view>
+  </view>
+  <view class="card">
+    <image class="card-image" src="../../images/banner.jpg"/>
+    <view class="text">我想对你们说</view>
+  </view>
+</view>

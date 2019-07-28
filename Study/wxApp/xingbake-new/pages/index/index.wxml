@@ -1,0 +1,70 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="header">
+  <view class="btn1">
+    <image class="moonCake" src="../../images/moonCake.jpg" />
+    <view class="text">中秋快乐</view>
+  </view>
+  <view class="collection">
+    <view class="btn2">收藏卡面</view>
+    <view class="btn3">
+      <image class="star" src="../../images/moonCake.jpg" />
+    </view>
+  </view>
+</view>
+<view class="container">
+  <view class="title">咖啡+祝福，即刻表心意</view>
+  <view class="content">
+    <view class="card">
+      <image class="image" src="../../images/card1.jpg" />
+      <view class="texts">冰饮派对</view>
+    </view>
+    <view class="card">
+      <image class="image" src="../../images/card2.jpg" />
+      <view class="texts">DIY一份夏日心意</view>
+    </view>
+  </view>
+  <view class="title">点滴心意，保护自然</view>
+  <view class="content">
+    <view class="card">
+      <image class="image" src="../../images/card3.jpg" />
+      <view class="texts">自然守护者</view>
+    </view>
+    <view class="card">
+      <image class="image" src="../../images/card4.jpg" />
+      <view class="texts">一起出发吧</view>
+    </view>
+  </view>
+  <view class="title">这一路，有你真好</view>
+  <view class="content">
+    <view class="card">
+      <image class="image" src="../../images/card5.jpg" />
+      <view class="texts">我想你了</view>
+    </view>
+    <view class="card">
+      <image class="image" src="../../images/card6.jpg" />
+      <view class="texts">感恩有你</view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="card">
+      <image class="image" src="../../images/card7.jpg" />
+      <view class="texts">咖啡有你</view>
+    </view>
+    <view class="card">
+      <image class="image" src="../../images/card8.jpg" />
+      <view class="texts">生日快乐</view>
+    </view>
+  </view>
+</view>
+<view class="footer">
+    <view class="btn4">
+      <image class="star" src="../../images/moonCake.jpg" />
+      <view class="history" bindtap="toHistory">购买历史</view>
+    </view>
+  </view>

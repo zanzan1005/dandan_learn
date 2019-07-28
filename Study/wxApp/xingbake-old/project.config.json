@@ -12,9 +12,9 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.2",
+	"libVersion": "2.7.7",
 	"appid": "wx9b4f41b9c3a6d842",
-	"projectname": "game",
+	"projectname": "xingbake-old",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
