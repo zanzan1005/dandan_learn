@@ -22,7 +22,6 @@ body,html{
 }
 .navbar .item.active{
   color: red;
-  /* margin-bottom: 1px solid red; */
 }
 .navbar .item.active:after{
   content: "";
@@ -35,39 +34,30 @@ body,html{
 }
 .content{
   display: flex;
-  flex-wrap:wrap;
-  flex-direction:row;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: -300rpx;
 }
 .product{
   width: 45%;
-  height: 100px;
-  margin-top: 30px;
+  height:200rpx;
+  margin-top: 190px;
+  margin-left: 20rpx;
 }
 .image{
-  width: 200px;
-  height: 190px;
+  width: 400rpx;
+  height: 400rpx;
 }
 .title{
   font-weight: 150;
   margin-left: 20px;
   font-size: 13px;
-}
+} 
 .price{
   font-weight: 350;
   margin-left: 20px;
   margin-top: 10px;
   font-size: 15px;
-}
-.oneplus7{
-  width: 45%;
-  height: 100px;
-  margin-right: 30px;
-}
-.good{
-  width: 45%;
-  height: 100px;
-  margin-top: 180px;
-  margin-left: 10px;
 }
 .minPrice{
   color: #c0c0c0;
@@ -75,12 +65,5 @@ body,html{
   margin-left: 20px;
   margin-top: 10px;
   text-decoration: line-through;
-}
-.shell{
-  width: 45%;
-  height: 100px;
-  margin-top: 180px;
-}
-.Wrap{
-  margin-left: 10px;
-}
+} 
+

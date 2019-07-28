@@ -1,131 +1,33 @@
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" class="swiper">
   <block wx:for="{{imgUrls}}" wx:key="{{index}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image"/>
+      <image src="{{item}}" class="slide-image" />
     </swiper-item>
   </block>
 </swiper>
-
 <scroll-view class="navbar" scroll-x="true" style="width: 100%">
-  <view wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</view>
+  <view wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+    {{item}}
+  </view>
 </scroll-view>
- 
-<!--商品精选-->
+<!-- 商品精选 -->
 <view hidden="{{currentTab!==0}}" class="content">
-  <view class="product oneplus7Pro">
-    <image src="../../images/title.jpg" class="image" bindtap="oneplus7Pro"/>
+  <view class="product" wx:for="{{productLists}}" wx:key="{{index}}">
+    <image src="{{item.src}}" class="image" bindtap="oneplus7Pro" />
     <view class="desc">
-      <view class="title">Oneplus 7 Pro</view>
-      <view class="price">最低价 ￥3999</view>
-    </view> 
+      <view class="title">{{item.title}}</view>
+      <view class="price">{{item.price}}</view>
+      <view class="minPrice">{{item.minPrice}}</view>
+    </view>
   </view>
-  <view class="product oneplus7">
-    <image src="../../images/title2.jpg" class="image" bindtap="oneplus7Pro"/>
-    <view class="desc">
-      <view class="title">Oneplus 7</view>
-      <view class="price">最低价 ￥2999</view>
-    </view> 
-  </view>
-  <view class="product good">
-    <image src="../../images/title3.jpg" class="image" bindtap="oneplus7Pro"/>
-    <view class="desc">
-      <view class="title">Oneplus 7 加油套装</view>
-      <view class="price">最低价 ￥345.1</view>
-      <view class="minPrice">最低价 ￥ 406</view>
-    </view> 
-  </view>
-  <view class="product shell">
-    <image src="../../images/title4.jpg" class="image" bindtap="oneplus7Pro"/>
-    <view class="desc">
-      <view class="title">Oneplus 7 Pro个性保护壳</view>
-      <view class="price">最低价 ￥99</view>
-    </view> 
-  </view>
-  <view class="product shell">
-    <image src="../../images/title5.jpg" class="image" bindtap="oneplus7Pro"/>
-    <view class="desc">
-      <view class="title">Oneplus 7 Pro全包保护壳</view>
-      <view class="price">最低价 ￥199</view>
-    </view> 
-  </view>
-  <view class="product shell">
-    <image src="../../images/title6.jpg" class="image" bindtap="oneplus7Pro"/>
-    <view class="desc">
-      <view class="title">一加云耳 2</view>
-      <view class="price">￥599</view>
-    </view> 
-  </view>
-  <view class="product shell">
-    <image src="../../images/title7.jpg" class="image" bindtap="oneplus7Pro"/>
-    <view class="desc">
-      <view class="title">OnePlus Warp 30 闪充套装</view>
-      <view class="price">￥217
-        <text class="minPrice Wrap">￥228</text>
-      </view>
-    </view> 
-  </view>
-  <view class="product shell">
-    <image src="../../images/title8.jpg" class="image" bindtap="oneplus7Pro"/>
-    <view class="desc">
-      <view class="title">OnePlus 7 Pro 全家桶套装</view>
-      <view class="price">最低价 ￥421.6</view>
-      <view class="minPrice">最低价 ￥496</view>
-    </view> 
-  </view>
-  <view class="product shell">
-    <image src="../../images/title10.jpg" class="image" bindtap="oneplus7Pro"/>
-    <view class="desc">
-      <view class="title">OnePlus 7 Pro 悦耳套装</view>
-      <view class="price">最低价 ￥254.6</view>
-      <view class="minPrice">最低价 ￥268</view>
-    </view> 
-  </view>
-  <view class="product shell">
-    <image src="../../images/title9.jpg" class="image" bindtap="oneplus7Pro"/>
-    <view class="desc">
-      <view class="title">一加Wrap闪充30电源适配器</view>
-      <view class="price">￥149</view>
-    </view> 
-  </view>
-  <view class="product shell">
-    <image src="../../images/title11.jpg" class="image" bindtap="oneplus7Pro"/>
-    <view class="desc">
-      <view class="title">一加Wrap闪充30车载充电器</view>
-      <view class="price">￥199</view>
-    </view> 
-  </view>
-  <view class="product shell">
-    <image src="../../images/title12.jpg" class="image" bindtap="oneplus7Pro"/>
-    <view class="desc">
-      <view class="title">一加Wrap闪充30 Type-C 数据线</view>
-      <view class="price">最低价 ￥79</view>
-    </view> 
-  </view>
-
-
 </view>
- 
-<!--耳机-->
-<view hidden="{{currentTab!==1}}">
-  tab_02
-</view>
- 
-<!--壳/膜-->
-<view hidden="{{currentTab!==2}}">
-  tab_03
-  </view>
-
+<!-- 耳机 -->
+<view hidden="{{currentTab!==1}}">tab_02</view>
+<!-- 壳/膜 -->
+<view hidden="{{currentTab!==2}}">tab_03</view>
 <!-- 适配器/数据线 -->
-<view hidden="{{currentTab!==3}}">
-  tab_04
-  </view>
-
+<view hidden="{{currentTab!==3}}">tab_04</view>
 <!-- 套装 -->
-<view hidden="{{currentTab!==4}}">
-  tab_05
-  </view>
-
+<view hidden="{{currentTab!==4}}">tab_05</view>
 <!-- 生活馆 -->
-<view hidden="{{currentTab!==5}}">
-  tab_06
-  </view>
+<view hidden="{{currentTab!==5}}">tab_06</view>
