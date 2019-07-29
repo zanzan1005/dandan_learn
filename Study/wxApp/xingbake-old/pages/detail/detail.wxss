@@ -38,6 +38,7 @@
 .props{
   width: 100%;
   height: 70px;
+  border-radius: 10rpx;
 }
 
 .title1{
@@ -72,6 +73,56 @@
   margin-top: 10rpx;
   font-size: 12px;
 }
+
+.center{
+  width: 100%;
+  height: 20rpx;
+  margin-top: 400rpx;
+  background-color: #e9e9e9;
+}
+
+.footer{
+  font-size: 10px;
+}
+
+.pro{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+  margin-bottom: 2px solid #e9e9e9;
+}
+
+.name{
+  margin-left: 30rpx;
+  line-height: 80rpx;
+  width: 20%;
+}
+
+.desc{
+  width: 70%;
+  line-height: 80rpx;
+  color: #003472;
+}
+
+.notice{
+  height: 600rpx;
+}
+
+.starCard{
+  color: #c0c0c0;
+}
+
+.buy{
+  margin-top: 400rpx;
+}
+
+.btn{
+  width: 94%;
+}
+
+
 
 
 
