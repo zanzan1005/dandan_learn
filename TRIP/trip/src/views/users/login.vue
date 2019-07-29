@@ -10,7 +10,7 @@
         <md-input-item ref="id" title="密码" type="password" placeholder="请输入密码" v-model="user.password"></md-input-item>
       </md-field>
       <div class="login-btn">
-        <span @click="loginonClick">
+        <span @click="loginOnClick">
           <md-button type="primary" round>登录</md-button>
         </span>
       </div>
@@ -19,10 +19,12 @@
 </template>
 
 <script>
+import { Toast } from 'mand-mobile'
 export default {
   name: "Login",
   data () {
     return {
+      userData: null,
       user: {
         name: '15330734121',
         password: '123456'
@@ -30,7 +32,21 @@ export default {
     }
   },
   methods: {
-    loginonClick () {}
+    loginOnClick () {
+      this.loginAjax()
+    },
+    loginAjax() {
+      let params = {
+        userName : this.user.name,
+        passWord : this.user.password
+      }
+      this.$http.post('/user',params).then(res => {
+        this.userData = res.data.data
+        let tmpUser = JSON.stringify(this.user.data)
+        // 存到vuex里面
+        Toast.succeed(`欢迎回来，${this.userData.name}`,1500)
+      })
+    }
   }
 };
 </script>

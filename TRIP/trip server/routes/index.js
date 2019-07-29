@@ -17,4 +17,7 @@ router.get('/',function(req,res,next){
       }
     })
   }
+  readImage('public/images/head.jpeg')
 })
+
+module.exports = router
