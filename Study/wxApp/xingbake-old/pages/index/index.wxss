@@ -5,14 +5,14 @@
 
 .title{
   font-weight: bold;
-  font-size: 16px;
-  line-height: 60rpx;
+  font-size: 14px;
+  line-height: 70rpx;
   margin-top: 20rpx;
   margin-left: 60rpx;
 }
 
 .content{
-  width: 90%;
+  width: 96%;
   margin: 0 auto;
 }
 
@@ -25,7 +25,7 @@
 
 .card{
   width: 45%;
-  margin-left: 25rpx;
+  margin-left: 26rpx;
   margin-top: 40rpx;
   box-shadow: 0 0 10px #bdbebd;
   border: 1px solid hsl(0, 0%, 88%);
@@ -45,5 +45,22 @@
   color: gray;
   line-height: 40rpx;
   font-size: 13px;
+}
+
+.history{
+  text-align: center;
+  font-size: 14px;
+  color: #096d49;
+  line-height: 160rpx;
+}
+
+.footer{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 80rpx;
+  color: #c0c0c0;
+  border-top:1px solid #c0c0c0;
 }
 

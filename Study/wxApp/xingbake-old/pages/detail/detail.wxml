@@ -1,0 +1,22 @@
+<view class="top">
+  <view class="content">
+    <view class="show-card">
+      <image class="show" src="../../images/show05.jpg" />
+    </view>
+    <view class="title">选择卡面</view>
+    <view class="card-list">
+      <view class="cards" wx:for="{{cardLists}}" wx:key="{{index}}">
+        <image class="props" src="{{item}}" />
+      </view>
+    </view>
+    <view class="title title1">选择礼品</view>
+    <view class="gift-list">
+        <view class="giftCards" wx:for="{{giftLists}}" wx:key="{{index}}">
+          <view class="price">{{item}} 元</view>
+          <view class="text">星礼卡</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="center"></view>
+<view class="footer"></view>

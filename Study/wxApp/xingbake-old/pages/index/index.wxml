@@ -1,6 +1,7 @@
 <view class="header">
   <image class="banner" src="../../images/banner.png" />
 </view>
+
 <view class="container">
   <view class="title">请朋友喝咖啡</view>
   <view class="content">
@@ -9,9 +10,9 @@
         <image class="card-image" src="../../images/card01.jpg" />
         <view class="text">我想对你们说</view>
       </view>
-      <view class="card">
+      <view class="card" bindtap="toDetail">
         <image class="card-image" src="../../images/card02.jpg" />
-        <view class="text">我想对你们说</view>
+        <view class="text">爱要大声说出来</view>
       </view>
     </view>
   </view>
@@ -28,7 +29,7 @@
       </view>
     </view>
   </view>
-  <view class="title">请朋友喝咖啡</view>
+  <view class="title">祝你生日快乐</view>
   <view class="content">
     <view class="child">
       <view class="card">
@@ -54,3 +55,7 @@
     </view>
   </view>
 </view>
+
+<view class="history">搜索历史</view>
+
+<view class="footer">可以在星巴克用星说中国选购礼卡</view>
