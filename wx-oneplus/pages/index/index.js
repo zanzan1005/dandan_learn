@@ -21,12 +21,6 @@ Page({
       {src:"../../images/title9.jpg",title:"一加Wrap闪充30电源适配器",price:"￥149"},
       {src:"../../images/title11.jpg",title:"一加Wrap闪充30车载充电器",price:"￥199"},
       {src:"../../images/title12.jpg",title:"一加Wrap闪充30 Type-C 数据线",price:"最低价 ￥79"},
-
-
-
-
-
-
     ],
     indicatorDots: true,
     autoplay: true,
