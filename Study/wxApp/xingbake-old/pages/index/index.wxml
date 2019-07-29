@@ -1,15 +1,56 @@
 <view class="header">
-  <image class="banner" src="../../images/banner.jpg" />
+  <image class="banner" src="../../images/banner.png" />
 </view>
-
-<view class="content">
-  <view class="title">请朋友们喝咖啡</view>
-  <view class="card">
-    <image class="card-image" src="../../images/banner.jpg"/>
-    <view class="text">我想对你们说</view>
+<view class="container">
+  <view class="title">请朋友喝咖啡</view>
+  <view class="content">
+    <view class="child">
+      <view class="card">
+        <image class="card-image" src="../../images/card01.jpg" />
+        <view class="text">我想对你们说</view>
+      </view>
+      <view class="card">
+        <image class="card-image" src="../../images/card02.jpg" />
+        <view class="text">我想对你们说</view>
+      </view>
+    </view>
   </view>
-  <view class="card">
-    <image class="card-image" src="../../images/banner.jpg"/>
-    <view class="text">我想对你们说</view>
+  <view class="title">星礼卡表达心意</view>
+  <view class="content">
+    <view class="child">
+      <view class="card">
+        <image class="card-image" src="../../images/card03.jpg" />
+        <view class="text">我想对你们说</view>
+      </view>
+      <view class="card">
+        <image class="card-image" src="../../images/card04.jpg" />
+        <view class="text">我想对你们说</view>
+      </view>
+    </view>
+  </view>
+  <view class="title">请朋友喝咖啡</view>
+  <view class="content">
+    <view class="child">
+      <view class="card">
+        <image class="card-image" src="../../images/card05.jpg" />
+        <view class="text">我想对你们说</view>
+      </view>
+      <view class="card">
+        <image class="card-image" src="../../images/card06.jpg" />
+        <view class="text">我想对你们说</view>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="child">
+      <view class="card">
+        <image class="card-image" src="../../images/card07.jpg" />
+        <view class="text">我想对你们说</view>
+      </view>
+      <view class="card">
+        <image class="card-image" src="../../images/card08.jpg" />
+        <view class="text">我想对你们说</view>
+      </view>
+    </view>
   </view>
 </view>
