@@ -1,8 +1,26 @@
-<view class="container">
-  <scroll-view class="header" scroll-x 
-     scroll-left="1" scroll-into-view="" scroll-with-animation="true">
-    <view class="title">零售店</view>
-    <view class="title">精彩活动</view>
-    <view class="title">发现更多</view>
-  </scroll-view>
-</view>
+<van-tabs animated>
+  <van-tab title="零售店">
+    <view class="card">
+      <image class="image" src="../../images/2.jpg"/>
+      <view class="content">
+        <view class="desc">零售店体验与购买</view>
+      <view class="text">5 月  21日起OnePlus 7 系列火热发售， 欢迎前往零售店体验购买！
+      </view>
+      <view class="btn">立即查看</view>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="精彩活动" class="act-page">
+    <view class="acivity">
+      <image class="acivity-image" src="../../images/1.jpg"/>
+      <view class="desc">OnePlus 7 系列 Pop-up</view>
+      <view class="text">现场购机成为全国首批OnePlus新机拥有者，更有惊喜好礼等你来！点击立即报名</view>
+    </view>
+    <view class="acivity act2">
+      <image class="acivity-image" src="../../images/find1.jpg"/>
+      <view class="desc">一起来看发布会</view>
+      <view class="text">一起亲临现场，见证新品发布，更有惊喜现场好礼在等你</view>
+    </view>
+  </van-tab>
+  <van-tab title="发现更多"></van-tab>
+</van-tabs>
