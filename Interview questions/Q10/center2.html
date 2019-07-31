@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>盒子水平居中的第二种方法</title>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .aa{
+    width: 1000px;
+    height: 600px;
+    background: green;
+    position: relative;
+  }
+  .bb{
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="aa">
+    <div class="bb">
+
+    </div>
+  </div>
+</body>
+</html>
