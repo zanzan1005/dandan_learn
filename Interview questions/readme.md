@@ -85,6 +85,31 @@
     scrollTop: 滚动后被隐藏的高度
 
 #Q15 JS拖拽功能的实现
+
+#Q16 类的创建和继承
+
+#Q17 click在iOS手机上有300ms的延迟，原因及解决方法
+    1.<meta name="viewport" content="width=device-width, initial-scale=1.0"> 禁止缩放
+    2.FastClick,其原理是：检测到touchend事件后，立刻发出模拟click事件，并把浏览器300ms之后真实发出的事件阻断
+
+#Q18 Cookie,sessionStorage,loaclStorage
+    1.cookie:数据始终在同源的http请求中携带（即使不需要）
+    即cookie在浏览器和服务器之间来回传递，
+    sessionStorage和localStorage不会自动把数据发给服务器，只会在本地保存
+    cookie：单个cookie保存的数据不能超过4kb；session大小没有限制。
+    cookie还有路径(path)的概念，可以限制cookie只属于某个路径下，存储大小只有4KB
+
+    2.sessionStorage：仅在当前浏览器窗口关闭之前生效
+
+    3.localStorage：将数据保存在客户端本地的硬件设备(通常指硬盘，也可以是其他硬件设备)中，即使浏览器被关闭了，该数据仍然存在，下次打开浏览器访问网站时仍然可以继续使用。
+    
+    localStorage除非主动删除数据，否则数据永远不会消失。
+
+    cookie和localStorage在所有的同源窗口都是共享的
+
+    localStorage和sessionStorage的存储数据大小一般都是：5MB
+
+    这两者的区别在于，sessionStorage为临时保存，而localStorage为永久保存。
     
     
 
