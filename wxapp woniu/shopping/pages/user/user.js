@@ -5,37 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    thumb:'',
-    nickname:'',
-    orders:[],
-    hasAddress:false,
-    address:{}
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let self = this
-    wx.getUserInfo({
-      success: (result)=>{
-        self.setData({
-          thumb:result.userInfo.avatarUrl,
-          nickname:result.userInfo.nickName
-        })
-      },
-      fail: ()=>{},
-      complete: ()=>{}
-    });
 
-    wx.request({
-      url:'http://www.gdfengshuo.com/api/wx/orders.txt',
-      success(res){
-        self.setData({
-          orders:res.data
-        })
-      }
-    })
   },
 
   /**
@@ -49,34 +26,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.self = this
-    wx.getStorage({
-      key: 'address',
-      success: (result)=>{
-        this.setData({
-          hasAddress:true,
-          address:result.data
-        })
-      },
-      fail: ()=>{},
-      complete: ()=>{}
-    });
+
   },
 
-  payOrders(){
-    wx.requestPayment({
-      timeStamp: '',
-      nonceStr: '',
-      package: '',
-      signType: '',
-      paySign: '',
-      success: (result)=>{
-        
-      },
-      fail: ()=>{},
-      complete: ()=>{}
-    });
-  },
   /**
    * 生命周期函数--监听页面隐藏
    */

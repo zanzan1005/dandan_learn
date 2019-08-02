@@ -1,11 +1,11 @@
-// pages/catgory/category.js
+// pages/category/category.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    category:[
+    category: [
       { name: '果味', id: 'guowei' },
       { name: '蔬菜', id: 'shucai' },
       { name: '炒货', id: 'chaohuo' },
@@ -13,16 +13,16 @@ Page({
       { name: '粗茶', id: 'cucha' },
       { name: '淡饭', id: 'danfan' }
     ],
-    curIndex:0,
-    isScorll:false,
-    toView:'guowei',
-    detail:[]
+    curIndex: 0,
+    isScroll: false,
+    toView: 'guowei',
+    detail: []
   },
-  switchTab(e){
-    console.log(e),
+  switchTab(e) {
+    console.log(e)
     this.setData({
-        toView:e.target.dataset.id,
-        curIndex:e.target.dataset.index
+      toView: e.target.dataset.id,
+      curIndex: e.target.dataset.index
     })
   },
 
@@ -37,13 +37,13 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    let self = this;
+    let self = this
     wx.request({
-      url:'http://www.gdfengshuo.com/api/wx/cate-detail.txt',
-      success(res){
+      url: 'http://www.gdfengshuo.com/api/wx/cate-detail.txt',
+      success(res) {
         console.log(res)
         self.setData({
-          detail:res.data
+          detail: res.data
         })
       }
     })
