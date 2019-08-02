@@ -1,28 +1,29 @@
-body,html{
-  width: 100%;
-  height: 100%;
-}
 .swiper{
   width: 100%;
   height: 350px;
 }
+
 .slide-image{
   width: 100%;
   height: 350px;
 }
+
 .navbar{
   display: flex;
   white-space: nowrap;
   margin-top: 15px;
 }
+
 .navbar .item{
   display: inline-block;
   font-weight: 100;
   margin-left: 20px;
 }
+
 .navbar .item.active{
   color: red;
 }
+
 .navbar .item.active:after{
   content: "";
   display: block;
@@ -32,38 +33,61 @@ body,html{
   right: 0;
   height: 4rpx;
 }
+
 .content{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: -320rpx;
+  width: 100%;
 }
+
 .product{
   width: 45%;
-  height:200rpx;
-  margin-top: 190px;
-  margin-left: 20rpx;
+  height:500rpx;
+  margin-top: 100rpx;
+  margin-left: 10rpx;
+  z-index: 1;
 }
-.image{
-  width: 400rpx;
-  height: 400rpx;
+
+.product-image{
+  width: 300rpx;
+  height: 300rpx;
 }
+
 .title{
-  font-weight: 150;
-  margin-left: 20px;
+  font-weight: 500;
   font-size: 14px;
+  color: #000;
 } 
+
+.container{
+  display: flex;
+}
+
 .price{
   font-weight: 350;
-  margin-left: 20px;
   margin-top: 10px;
   font-size: 15px;
+  width: 220rpx;
 }
+
 .minPrice{
   color: #c0c0c0;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 300;
   margin-left: 20px;
   margin-top: 10px;
   text-decoration: line-through;
 } 
+
+.small{
+  margin-left: -120rpx;
+  margin-top: 30rpx;
+}
+
+.gray{
+  border: 1px solid red;
+  z-index: 500;
+  background-color: #c0c0c0;
+}
 

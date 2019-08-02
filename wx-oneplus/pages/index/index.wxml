@@ -5,29 +5,33 @@
     </swiper-item>
   </block>
 </swiper>
-<scroll-view class="navbar" scroll-x="true" style="width: 100%">
-  <view wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
-    {{item}}
-  </view>
-</scroll-view>
-<!-- 商品精选 -->
-<view hidden="{{currentTab!==0}}" class="content">
-  <view class="product" wx:for="{{productLists}}" wx:key="{{index}}">
-    <image src="{{item.src}}" class="image" bindtap="oneplus7Pro" />
-    <view class="desc">
-      <view class="title">{{item.title}}</view>
-      <view class="price">{{item.price}}</view>
-      <view class="minPrice">{{item.minPrice}}</view>
+<van-tabs active="{{ active }}">
+  <van-tab title="商品精选">
+    <view class="content">
+      <view class="product" wx:for="{{productLists}}" wx:key="{{index}}">
+        <image src="{{item.src}}" class="product-image" bindtap="oneplus7Pro" />
+        <view class="desc">
+          <view class="title">{{item.title}}</view>
+          <view class="container">
+            <view class="price">{{item.price}}</view>
+          <view class="minPrice small">{{item.smallPrice}}</view>
+          </view>
+          <view class="minPrice">{{item.minPrice}}</view>
+        </view>
+      </view>
+      <view class="product gray" wx:for="{{productLists_gray}}" wx:key="{{index}}">
+        <image src="{{item.src}}" class="product-image" bindtap="oneplus7Pro" />
+        <view class="desc">
+          <view class="title">{{item.title}}</view>
+          <view class="price">{{item.price}}</view>
+          <view class="minPrice">{{item.minPrice}}</view>
+        </view>
+      </view>
     </view>
-  </view>
-</view>
-<!-- 耳机 -->
-<view hidden="{{currentTab!==1}}">tab_02</view>
-<!-- 壳/膜 -->
-<view hidden="{{currentTab!==2}}">tab_03</view>
-<!-- 适配器/数据线 -->
-<view hidden="{{currentTab!==3}}">tab_04</view>
-<!-- 套装 -->
-<view hidden="{{currentTab!==4}}">tab_05</view>
-<!-- 生活馆 -->
-<view hidden="{{currentTab!==5}}">tab_06</view>
+  </van-tab>
+  <van-tab title="耳机">内容 2</van-tab>
+  <van-tab title="壳/膜">内容 3</van-tab>
+  <van-tab title="适配器/数据线">内容 4</van-tab>
+  <van-tab title="套装">内容 5</van-tab>
+  <van-tab title="生活馆">内容 6</van-tab>
+</van-tabs>

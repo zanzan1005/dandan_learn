@@ -13,7 +13,7 @@
 		"checkInvalidKey": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.2",
+	"libVersion": "2.0.4",
 	"appid": "wx9b4f41b9c3a6d842",
 	"projectname": "wx-oneplus",
 	"debugOptions": {

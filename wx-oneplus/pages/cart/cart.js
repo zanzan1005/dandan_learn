@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    proList: [
+      {proName: 'a', proPrice: 1},
+      {proName: 'b', proPrice: 2}
+    ]
   },
 
   /**

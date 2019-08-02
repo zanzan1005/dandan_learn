@@ -7,7 +7,8 @@ page{
   width: 90%;
   height: auto;
   margin: 0 auto;
-  margin-top: 80rpx;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
 }
 
 .image{
@@ -45,7 +46,7 @@ page{
 .acivity{
   width: 90%;
   margin: 0 auto;
-  margin-top: 80rpx;
+  margin-top: 40rpx;
   
 }
 
@@ -58,4 +59,8 @@ page{
 
 .act2{
   border-top: 1px solid #e0e0e0;
+}
+
+.imageFind{
+  height: 400rpx;
 }
