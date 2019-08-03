@@ -45,7 +45,23 @@
     <image class="image" src="../../images/cart.png" />
   </view>
   <view class="add">
-    <button class="btn" bindtap="toProductDetail">加入购物车</button>
+    <button class="btn" bindtap="change" >加入购物车</button>
     </view>
-  
 </view>
+
+<van-popup show="{{ show }}" position="bottom" overlay="{{ overlay }}" bind:close="onClose" close-on-click-overlay="{{close}}" overlay-style="{{style}}">
+  <view class="content">
+    <view class="header">
+      <view class="logo">
+        <image class="pro-logo" src="../../images/product1.jpg" />
+      </view>
+      <view class="desc">
+        <view class="title">
+          OnePlus 7 Pro 曜岩灰 6G+128G
+          <view class="price">￥3999.00</view>
+        </view>
+      </view>
+      <view class="del"></view>
+    </view>
+  </view>
+</van-popup>

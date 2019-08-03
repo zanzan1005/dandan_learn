@@ -14,18 +14,27 @@ Page({
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
-    duration: 2000
+    duration: 2000,
+    show: false,
+    overlay: true,
+    close: true
   },
   toCard: function () {
     wx.switchTab({
       url: '../../pages/cart/cart'
     });
   },
-  toProductDetail: function () {
-    wx.navigateTo({
-      url: '../../pages/product_detail/product_detail'
-    });
+  onClose() {
+    this.setData({ show: false });
   },
+  change: function () {
+    this.setData({ show: true });
+  },
+  // toProductDetail: function () {
+  //   wx.navigateTo({
+  //     url: '../../pages/product_detail/product_detail'
+  //   });
+  // },
 
   /**
    * 生命周期函数--监听页面加载

@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "van-popup": "../../lib/popup/index"
+  },
+  "navigationBarTitleText": "商品样式"
 }
