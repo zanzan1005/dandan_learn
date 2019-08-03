@@ -1,0 +1,5 @@
+<view class="content">
+  <image class="cart" src="../../images/cart_bg.png" />
+  <view class="text">您的购物车里还没有商品</view>
+  <button class="btn" bindtap="toIndex">去购物</button>
+</view>

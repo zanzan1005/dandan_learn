@@ -1,0 +1,51 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" class="swiper">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="centent">
+  <view class="desc">
+    <view class="title">OnePlus 7 Pro 曜岩灰 6G+128G</view>
+    <view class="price">￥3999.00</view>
+  </view>
+  <view class="select">
+    <view class="left">已选择：</view>
+    <view class="right">OnePlus 7 Pro 曜岩灰 6G+128G</view>
+  </view>
+  <view class="service">
+    <view class="title1">常见问题</view>
+    <view class="title2">三包服务介绍</view>
+    <view class="con">
+      <view class="one">
+        .承保周期:充电器、数据线、移动电源、耳机(有线/无线耳机)，自签收之日起，可享受七天无理由退货，十五天换货，一年内保修(森海塞尔耳机两年内保修) ;皮套、保护壳、屏幕保护膜、所有生活馆商品，自签收之日起，可享受七天无理由退货，十五天换货。
+      </view>
+      <view class="two">
+        .退换货要求:商品及包装保持一加出售时原状、配件及单据完好、齐全，并提供相关订单号、发票及三包凭证;非产品问题的退换，需产品包装完好，且仅退换一次，消费者承担邮费;产品问题的退换，请先联系一加人工客服，确认产品问题后，提供退换相关凭证，使用指定物流到付的方式寄回给-加。
+      </view>
+      <view class="title2">签收注意事项(签收时请注意以下信息)</view>
+      <view class="one">
+        若存在包装破损等影响签收的原因，请直接拒收，并及时联系一加人工客服协助处理
+        <view class="two">
+          . 签收后请尽快查看商品(配件、发票、三包凭证等)是否完整企，  若发现商品错误、商品少发、商品表面有质量问题等，请于24小时内联系一加人工客服协助处理。
+        </view>
+        <view class="title2">退货办理流程</view>
+        <view class="two">
+          .根据三包政策，符合退换货条件的，请拨打400-888-1111或通过商城在订单中心申请退换货，提供三包的相关凭证，会有专门的人员为您进行处理。
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="footer">
+  <view class="tocard" bindtap="toCard" >
+    <image class="image" src="../../images/cart.png" />
+  </view>
+  <view class="add">
+    <button class="btn" bindtap="toProductDetail">加入购物车</button>
+    </view>
+  
+</view>

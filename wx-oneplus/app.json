@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/product/product",
     "pages/index/index",
-    "pages/find/find",
     "pages/cart/cart",
-    "pages/my/my"
+    "pages/find/find",
+    "pages/my/my",
+    "pages/product_detail/product_detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

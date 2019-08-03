@@ -1,19 +1,11 @@
-// pages/cart/cart.js
+// pages/product_detail/product_detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    proList: [
-      {proName: 'a', proPrice: 1},
-      {proName: 'b', proPrice: 2}
-    ]
-  },
-  toIndex: function () {
-    wx.switchTab({
-      url: '../../pages/index/index'
-    })
+
   },
 
   /**

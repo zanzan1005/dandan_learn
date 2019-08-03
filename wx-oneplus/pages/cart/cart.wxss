@@ -1,0 +1,26 @@
+.content{
+  width: 100%;
+}
+
+.cart{
+  width: 35%;
+  height: 300rpx;
+  margin-top: 300rpx;
+  margin-left: 250rpx;
+}
+
+.text{
+  margin-top: 20rpx;
+  margin-left: 200rpx;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.btn{
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  width: 28%;
+  height: 90rpx;
+  margin-top: 40rpx;
+}

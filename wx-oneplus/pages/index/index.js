@@ -68,6 +68,11 @@ Page({
     navbar: ['商品精选', '耳机', '壳/膜','适配器/数据线','套装','生活馆'],
     currentTab: 0
   },
+  toProduct: function () {
+    wx.navigateTo({
+      url: '../../pages/product/product',
+    });
+  },
   navbarTap: function(e){
     this.setData({
       currentTab: e.currentTarget.dataset.idx

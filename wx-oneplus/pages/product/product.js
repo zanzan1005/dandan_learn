@@ -1,19 +1,30 @@
-// pages/cart/cart.js
+// pages/product/product.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    proList: [
-      {proName: 'a', proPrice: 1},
-      {proName: 'b', proPrice: 2}
-    ]
+    imgUrls: [
+      '../../images/product1.jpg',
+      '../../images/product2.jpg',
+      '../../images/product3.jpg',
+      '../../images/product4.jpg'
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 2000
   },
-  toIndex: function () {
+  toCard: function () {
     wx.switchTab({
-      url: '../../pages/index/index'
-    })
+      url: '../../pages/cart/cart'
+    });
+  },
+  toProductDetail: function () {
+    wx.navigateTo({
+      url: '../../pages/product_detail/product_detail'
+    });
   },
 
   /**

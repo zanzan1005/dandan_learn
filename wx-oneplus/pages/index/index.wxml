@@ -8,7 +8,7 @@
 
 <van-tabs active="{{ active }}">
   <van-tab title="商品精选">
-    <view class="content">
+    <view class="content" bindtap="toProduct">
       <view class="product" wx:for="{{productLists1}}" wx:key="{{index}}">
         <image src="{{item.src}}" class="product-image" bindtap="oneplus7Pro" />
         <view class="desc">
