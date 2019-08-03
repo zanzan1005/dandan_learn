@@ -10,6 +10,11 @@ Page({
       {proName: 'b', proPrice: 2}
     ]
   },
+  toIndex: function () {
+    wx.switchTab({
+      url: '../../pages/index/index'
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
