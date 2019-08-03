@@ -1,3 +1,0 @@
-<view class="btn" bindtap="toIndex">
-  <button type="primary">返回首页</button>
-</view>

@@ -45,13 +45,17 @@
   width: 45%;
   height:500rpx;
   margin-top: 100rpx;
-  margin-left: 10rpx;
+  margin-left: 25rpx;
   z-index: 1;
 }
 
 .product-image{
   width: 300rpx;
   height: 300rpx;
+}
+
+.desc{
+  margin-left: 40rpx;
 }
 
 .title{
@@ -75,7 +79,6 @@
   color: #c0c0c0;
   font-size: 12px;
   font-weight: 300;
-  margin-left: 20px;
   margin-top: 10px;
   text-decoration: line-through;
 } 
@@ -86,8 +89,9 @@
 }
 
 .gray{
-  border: 1px solid red;
   z-index: 500;
-  background-color: #c0c0c0;
+  opacity: 0.3;
+  background-color: #fff;
 }
+
 
