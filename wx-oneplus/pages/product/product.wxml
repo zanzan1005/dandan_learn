@@ -50,18 +50,46 @@
 </view>
 
 <van-popup show="{{ show }}" position="bottom" overlay="{{ overlay }}" bind:close="onClose" close-on-click-overlay="{{close}}" overlay-style="{{style}}">
-  <view class="content">
+  <view class="show-content">
     <view class="header">
       <view class="logo">
         <image class="pro-logo" src="../../images/product1.jpg" />
       </view>
-      <view class="desc">
-        <view class="title">
+      <view class="description">
+        <view class="description_title">
           OnePlus 7 Pro 曜岩灰 6G+128G
-          <view class="price">￥3999.00</view>
+          <view class="description_price">￥3999.00</view>
         </view>
       </view>
-      <view class="del"></view>
+      <view class="del">×</view>
+    </view>
+    <view class="color">
+      <text class="color-title">颜色</text>
+      <view class="color-content">
+        <view class="selected">曜岩灰</view>
+        <view class="noSelected">皓月金</view>
+        <view class="noSelected">星雾蓝</view>
+      </view>
+    </view>
+    <view class="size">
+      <text class="color-title">手机容量</text>
+      <view class="color-content size-content">
+        <view class="selected">6G + 128G</view>
+        <view class="gray">8G + 256G</view>
+        <view class="noSelected">12G + 256G</view>
+      </view>
+    </view>
+    <view class="Number">
+      <text class="color-title">数量</text>
+      <view class="number-content">
+        <view class="reduceNum" bindtap="reduceNum">-</view>
+      <input class="numInput" bindtap="changeNum" value="{{num}}" />
+      <view class="addNum" bindtap="addNum">+</view>
+      </view>
     </view>
   </view>
+  <view class="bottom">
+      <view class="addCart" bindtap="success">加入购物车</view>
+      <view class="buy" bindtap="buy">立即购买</view>
+    </view>
 </van-popup>

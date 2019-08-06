@@ -5,6 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    num: 1,
+    minStatus: false,
     imgUrls: [
       '../../images/product1.jpg',
       '../../images/product2.jpg',
@@ -18,6 +20,34 @@ Page({
     show: false,
     overlay: true,
     close: true
+  },
+  reduceNum: function () {
+    var num = this.data.num;
+    if (num > 1) {
+      num--
+    }
+    var minStatus = num > 1 ? 'true' : 'false'
+    this.setData({
+      num: num,
+      minStatus: minStatus
+    })
+  },
+  addNum: function () {
+    var num = this.data.num;
+    num++;
+    var minStatus = num > 1 ? 'true' : 'false'
+    this.setData({
+      num: num,
+      minStatus: minStatus
+    })
+  },
+  changeNum: function (e) {
+    var num = e.detail.value;
+    var minStatus = num > 1 ? 'true' : 'false'
+    this.setData({
+      num: num,
+      minStatus: minStatus
+    })
   },
   toCard: function () {
     wx.switchTab({
