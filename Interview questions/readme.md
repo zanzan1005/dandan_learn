@@ -110,6 +110,26 @@
     localStorage和sessionStorage的存储数据大小一般都是：5MB
 
     这两者的区别在于，sessionStorage为临时保存，而localStorage为永久保存。
+
+#Q19 任务列表(event loop)
+    marcotask(宏观任务)
+    setTimeout
+    setInterval
+    requestAnimationFrame
+    HTML的解析
+    js的主线程
+    页面加载
+    用户交互
+
+    mircotask(微观任务)
+    promise
+    mutation.oberver
+    process.nextTick
+
+    执行顺序：
+    script(主程序代码) ---> process.nextTick ----> promise ----> setTimeout ----> setInterval ---->setTmmediate ----> I/O ---->
+    UI rendeind
+
     
     
 
