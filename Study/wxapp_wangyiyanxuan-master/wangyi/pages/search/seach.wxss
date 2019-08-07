@@ -1,0 +1,39 @@
+  .addForm {
+    height: 100%;
+    width: 100%;
+  }
+  .addForm-div {
+    height: 100rpx;
+    border-bottom: 1rpx solid #ccc;
+    position: relative;
+  }
+  .search {
+    width: 610rpx;
+    height: 63rpx;
+    border-radius: 50rpx;
+    background-color: #fafafa;
+    padding-left: 45rpx;
+    position: absolute;
+    left: 10rpx;
+  }
+  .cancel {
+    position: absolute;
+    right: 110rpx;
+    top: 4rpx;
+    z-index:99;
+  }
+  .empty {
+    position: absolute;
+    right: 10rpx;
+    top: 10rpx;
+    color: #c2c2c2;
+  }
+  .result {
+    height: 100vh;
+  }
+  .product {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14rpx 40rpx;
+    font-size: 11pt;
+  }
