@@ -61,7 +61,7 @@
           <view class="description_price">￥3999.00</view>
         </view>
       </view>
-      <view class="del">×</view>
+      <view class="del" bindtap="del">×</view>
     </view>
     <view class="color">
       <text class="color-title">颜色</text>

@@ -1,5 +1,47 @@
-<view class="content">
+<!-- <view class="content" wx:else>
   <image class="cart" src="../../images/cart_bg.png" />
   <view class="text">您的购物车里还没有商品</view>
   <button class="btn" bindtap="toIndex">去购物</button>
 </view>
+<view class="box" wx:if="{{hasProductNum }}">
+  <view class="introduction">全场满99免运费</view>
+  <view class="products-prop">
+    <view class="pro-lists">
+      <view class="image"></view>
+      <view class="text">
+        <view class="pro-title"></view>
+        <view class="pro-price"></view>
+        <view class="del" bindtap="del_lists">×</view>
+        <view class="reduceNum" bindtap="reduceNum">-</view>
+        <input class="numInput" bindtap="changeNum" value="{{num}}" />
+        <view class="addNum" bindtap="addNum">+</view>
+      </view>
+    </view>
+  </view>
+  <view class="footer"></view>
+</view> -->
+
+<view class="box">
+  <view class="title">
+    <text class="desc">全场满99免运费</text>
+  </view>
+  <view class="lists" wx:for="{{lists}}" wx:key="{{index}}">
+    <view class="content">
+      <image class="lists-logo" src="{{item.src}}" bindtap="toIndex" />
+      <view class="detail">
+        <view class="props">{{item.title}}</view>
+        <view class="props-price">{{item.price}}</view>
+        <view class="reduceNum" bindtap="reduceNum">-</view>
+        <input class="numInput" bindtap="changeNum" value="{{num}}" />
+        <view class="addNum" bindtap="addNum">+</view>
+        <view class="del" bindtap="del_lists">×</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- <view class="content" wx:else>
+  <image class="cart" src="../../images/cart_bg.png" />
+  <view class="text">您的购物车里还没有商品</view>
+  <button class="btn" bindtap="toIndex">去购物</button>
+</view> -->

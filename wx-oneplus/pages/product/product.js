@@ -7,6 +7,7 @@ Page({
   data: {
     num: 1,
     minStatus: false,
+    productNum: 0,
     imgUrls: [
       '../../images/product1.jpg',
       '../../images/product2.jpg',
@@ -20,6 +21,30 @@ Page({
     show: false,
     overlay: true,
     close: true
+  },
+  del: function () {
+    this.setData({
+      show: false
+    })
+  },
+  success: function () {
+    wx.showToast({
+      title: '成功加入购物车',
+      duration: 1500,
+      mask: false
+    });
+  },
+  buy: function (e) {
+    console.log(e)
+    wx.switchTab({
+      url: '../../pages/cart/cart',
+      success: () => {
+        wx.setStorage({
+          key: 'product_detail',
+          data: this.data.ProductNum
+        })
+      }
+    })
   },
   reduceNum: function () {
     var num = this.data.num;

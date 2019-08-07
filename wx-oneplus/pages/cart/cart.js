@@ -5,11 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-    proList: [
-      {proName: 'a', proPrice: 1},
-      {proName: 'b', proPrice: 2}
-    ]
+    lists: [],
+    hasProductNum: false
   },
+  toIndex: function () {
+    wx.navigateTo({
+      url: '../../pages/product/product'
+    })
+  },
+  //存储数组函数
+  upLists(e) {
+    wx.setStorage({
+      key: 'lists',
+      data: this.data.lists
+    })
+  },
+  getProductNum(e) {
+
+  },
+  del_lists: function () {
+
+  },
+  reduceNum: function () {},
+  changeNum: function () {},
+  addNum: function () {},
   toIndex: function () {
     wx.switchTab({
       url: '../../pages/index/index'
