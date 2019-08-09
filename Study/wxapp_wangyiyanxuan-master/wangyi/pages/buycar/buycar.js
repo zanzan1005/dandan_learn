@@ -50,8 +50,7 @@ Page({
         this.setData({
           hasCarNum: res.data
         })
-      },
-      
+      },      
     })
   },
   //  总价计算函数封装
