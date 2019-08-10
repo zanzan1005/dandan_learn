@@ -1,5 +1,5 @@
 <swiper indicator-dots="{{indicatorDots}}"
-  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color='#dbdbdb' indicator-active-color='#00ae61'>
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#dbdbdb" indicator-active-color="#00ae61">
   <block wx:for="{{imgUrls}}" wx:key="{{index}}">
     <swiper-item>
       <image src="{{item}}" class="slide-image" bindtap="toDeatil"
@@ -9,22 +9,22 @@
 </swiper>
 
 <view class="content">
-  <text class='title'>咖啡+祝福 即刻表心意</text>
-  <view class='lists' >
-    <block class='pro-item' wx:for="{{proList}}">
-      <view class='pro-bodydiv' bindtap='toProListInfo' data-index='{{index}}'>
-        <image class='pro-img' src='{{item.toppic}}'/> 
-         <view class='pro-name'>{{item.name}}</view> 
+  <text class="title">咖啡+祝福 即刻表心意</text>
+  <view class="lists" >
+    <block class="item" wx:for="{{Lists}}" wx:key="{{index}}">
+      <view class="props" bindtap="toProListInfo" data-index="{{index}}">
+        <image class="props-img" src="{{item.url}}"/> 
+         <view class="props-name">{{item.title}}</view> 
       </view>
     </block>
   </view>
 
-  <view class='pro-bottom'>
+  <view class="props-footer">
     <view>
-      <view bindtap='toProHistory'>
-        <image class='pro-pay' src='/images/img_pay.jpg'/>
+      <view bindtap="toProHistory">
+        <image class="props-pay" src="../../images/img_pay.jpg"/>
       </view>
-      <text class='pro-history'>购买历史</text>
+      <text class="props-history">购买历史</text>
     </view>
   </view>
 

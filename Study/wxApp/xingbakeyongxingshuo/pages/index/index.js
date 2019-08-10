@@ -16,38 +16,32 @@ Page({
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
-    duration: 1000,
-    proList:[
+    duration: 2000,
+    Lists:[
       {
-        "toppic": "/images/img_bann1.jpg",
-        "name": "玩出我的夏天"
+        "url": "../../images/card01.jpg",
+        "title": "夏日 冰爽"
       }, {
-        "toppic": "/images/img_bann2.jpg",
-        "name": "你真棒"
+        "url": "../../images/card02.jpg",
+        "title": "DIY夏日祝福"
       }, {
-        "toppic": "/images/img_bann3.jpg",
-        "name": "毕业季"
+        "url": "../../images/card03.jpg",
+        "title": "冰饮派对"
       }, {
-        "toppic": "/images/img_bann4.jpg",
-        "name": "干杯"
+        "url": "../../images/card04.jpg",
+        "title": "酷爽一夏"
       }, {
-        "toppic": "/images/img_bann5.jpg",
-        "name": "求抱抱"
+        "url": "../../images/card05.jpg",
+        "title": "我想你了"
       }, {
-        "toppic": "/images/img_bann6.jpg",
-        "name": "宝贝谢谢你"
+        "url": "../../images/card06.jpg",
+        "title": "有你真好"
       }, {
-        "toppic": "/images/img_bann7.jpg",
-        "name": "有你真好"
+        "url": "../../images/card07.jpg",
+        "title": "咖啡有你"
       }, {
-        "toppic": "/images/img_bann8.jpg",
-        "name": "宝贝 生快"
-      }, {
-        "toppic": "/images/img_bann9.jpg",
-        "name": "为你点赞"
-      }, {
-        "toppic": "/images/img_bann10.jpg",
-        "name": "休息一夏"
+        "url": "../../images/card08.jpg",
+        "title": "生日快乐"
       }
     ]
   },
