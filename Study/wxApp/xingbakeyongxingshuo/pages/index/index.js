@@ -6,17 +6,35 @@ Page({
    */
   data: {
     imgUrls: [
-      "/images/banner1.png",
-      "/images/banner2.jpg",
-      "/images/banner3.jpg",
-      "/images/banner4.jpg",
-      "/images/banner5.jpg",
-      "/images/banner6.jpg",
+      {
+        "url": "../../images/banner1.png",
+        "name": "banner1"
+      },
+      {
+        "url": "../../images/banner2.jpg",
+        "name": "banner2"
+      },
+      {
+        "url": "../../images/banner3.jpg",
+        "name": "banner3"
+      },
+      {
+        "url": "../../images/banner4.jpg",
+        "name": "banner4"
+      },
+      {
+        "url": "../../images/banner5.jpg",
+        "name": "banner5"
+      },
+      {
+        "url": "../../images/banner6.jpg",
+        "name": "banner6"
+      }
     ],
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
-    duration: 2000,
+    duration: 4000,
     Lists:[
       {
         "url": "../../images/card01.jpg",
@@ -49,56 +67,50 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  toDetail: function () {},
-  onLoad: function (options) {
-    this.getImgUrls();
-  },
+  // onLoad: function (options) {
+  //   this.getImgUrls();
+  // },
 
-  getImgUrls: function () {
-    var self = this;
-    wx.request({
-      url: '你的服务器地址...',
-      method: "GET",
-      success(res) {
-        console.log(res)
-        self.setData({
-          // imgUrls: res.data.bannerList,
-          // proList: res.data.centerList,
-          // bottomItem: res.data.bottom
-        })
-      }
-    })
-  },
+  // getImgUrls: function () {
+  //   var self = this;
+  //   wx.request({
+  //     url: '你的服务器地址...',
+  //     method: "GET",
+  //     success(res) {
+  //       console.log(res)
+  //       self.setData({
+  //         // imgUrls: res.data.bannerList,
+  //         // proList: res.data.centerList,
+  //         // bottomItem: res.data.bottom
+  //       })
+  //     }
+  //   })
+  // },
 
-  toBannerInfo: function (e) {
+  toBanner: function (e) {
     var index = e.currentTarget.dataset.index;
     var imgUrls = this.data.imgUrls;
     var name = imgUrls[index].name;
-    var toppic = imgUrls[index].toppic;
-    // wx.showToast({
-    //   title: name + '',
-    // })
+    var url = imgUrls[index].url;
     wx.navigateTo({
-      url: '/pages/gridinfo/gridinfo?name=' + name + '&toppic=' + toppic,
+      url: '../..pages/detail/detail?name=' + name + '&url=' + url,
     })
   },
 
-  toProListInfo: function (e) {
+  toDetail: function (e) {
     var index = e.currentTarget.dataset.index;
-    var proList = this.data.proList;
-    var name = proList[index].name;
-    var toppic = proList[index].toppic;
-    // wx.showToast({
-    //   title: name + '',
-    // })
+    var Lists = this.data.Lists;
+    var title = Lists[index].title;
+    var url = Lists[index].url;
+
     wx.navigateTo({
-      url: '/pages/gridinfo/gridinfo?name=' + name + '&toppic=' + toppic,
+      url: '../../deatil/detail?title=' + title + '&url=' + url,
     })
   },
 
-  toProHistory: function (e) {
-    wx.showToast({
-      title: '购买历史',
+  toHistory: function (e) {
+    wx.navigateTo({
+      url: '../history/history'
     })
   },
 
