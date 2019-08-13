@@ -38,7 +38,8 @@ $theme-color = #1c2635
     width 100%
     height 56px
     line-height 56px
-    color: $gray
+    color $gray
+    z-index 200
     background $theme-color
     .logo
       width 25%

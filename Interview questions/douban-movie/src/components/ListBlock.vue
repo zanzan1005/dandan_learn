@@ -7,13 +7,14 @@
     <div v-if="movies.length" class="list">
       <div class="item" v-for="item in movies" :key="item._id" @click="$emit('select',item._id)">
         <div class="image">
-          <image :src="item.poster" alt="" width="100%" height="100%"/>
+          <img :src="item.poster" alt="" width="100%" height="100%"/>
           <em v-if="item.isPlay === 1" class="rate">{{item.rate}}</em> 
           <!-- v-if：当隐藏结构时该结构会直接从整个dom树中移除；
           v-show：当隐藏结构时是在该结构的style中加上display:none，结构依然保留。 -->
         </div>
+        <p class="title">{{item.title}}</p>
       </div>
-      <p class="title">{{item.title}}</p>
+      
     </div>
     <div v-else class="loading-wrap">
       <Loading />
@@ -33,7 +34,10 @@ export default {
       type: Array,
       required: true
     }
-  }
+  },
+  created() {
+    console.log(this.movies)
+  },
 }
 </script>
 
