@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function foo() {
+      for (let arg of arguments) {
+        console.log('arg',arg);
+      }
+    }
+    foo('a','b','c')
+    var arr = []
+    var str = 'abc'
+    var map = new Map();
+    var obj = {};
+    console.log(
+      typeof arr[Symbol.iterator],
+      typeof str[Symbol.iterator],
+      typeof map[Symbol.iterator],
+      typeof obj[Symbol.iterator]
+    )
+    </script>
+</body>
+</html>

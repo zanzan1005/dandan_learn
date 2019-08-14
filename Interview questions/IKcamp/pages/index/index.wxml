@@ -1,9 +1,14 @@
 <view class="wrapper">
-  <view class="group" wx:for-item="group" wx:for="{{ articleList }}" wx:key="{{index}}">
-    {{group.date}}
+  <view class="group" wx:for-item="group" wx:for="{{ articleList }}">
+    {{ group.date }}
     <view class="group-content">
-      <view class="group-content-item" wx:for="{{group.articles}}" wx:key="{{id}}">
-        {{item.title}}
+      <view class="group-content-item {{ item.hasVisited ? 'visited' : '' }}" wx:for="{{ group.articles }}" data-item="{{ item }}" bind:tap="showDetail">
+        <view class="group-content-item-desc">
+          {{  item.title }}
+        </view>
+        <image class="group-content-item-img"
+        src="{{ item.cover }}"
+        />
       </view>
     </view>
   </view>

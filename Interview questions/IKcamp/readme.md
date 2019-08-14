@@ -24,3 +24,20 @@
     wx.request({content-type}) //b
 6. 请求字段统一处理
     1. 请求结果统一处理
+
+## for of 
+  用于遍历 可迭代 对象
+  比如： Array Map Set String
+    可迭代 对象有两个要求
+    1.存在Symbol.iterator 属性
+    2.Symbol.interator 是一个方法 返回next属性
+    ```
+    Symbol.interator = () => ({
+      next: () => {
+        return {
+          done:
+          value:
+        }
+      }
+    })
+    ```
