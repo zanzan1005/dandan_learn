@@ -6,6 +6,7 @@ Page({
    */
   data: {
     lists: [],
+    totalNum: 0,
     hasProductNum: false
   },
   toIndex: function () {
@@ -18,6 +19,25 @@ Page({
     wx.setStorage({
       key: 'lists',
       data: this.data.lists
+    })
+  },
+  //存储购物车数量函数
+  getProductNum(e) {
+    let totalNum = this.data.totalNum;
+    wx.getStorage({
+      key: 'product_detail',
+      data: totalNum
+    })
+  },
+  //取得购物车数量函数
+  PutProductNum (e) {
+    wx.getStorage({
+      key: 'product_detail',
+      success: (res)=>{
+        this.setData({
+          hasProductNum: res.data
+        })
+      },
     })
   },
   getProductNum(e) {

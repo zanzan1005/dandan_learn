@@ -35,10 +35,9 @@ Page({
     });
   },
   buy: function (e) {
-    console.log(e)
     wx.switchTab({
       url: '../../pages/cart/cart',
-      success: () => {
+      success: (res) => {
         wx.setStorage({
           key: 'product_detail',
           data: this.data.ProductNum

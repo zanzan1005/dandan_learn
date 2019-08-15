@@ -26,7 +26,7 @@
     <text class="desc">全场满99免运费</text>
   </view>
   <view class="lists" wx:for="{{lists}}" wx:key="{{index}}">
-    <view class="content">
+    <view class="lists-content">
       <image class="lists-logo" src="{{item.src}}" bindtap="toIndex" />
       <view class="detail">
         <view class="props">{{item.title}}</view>
