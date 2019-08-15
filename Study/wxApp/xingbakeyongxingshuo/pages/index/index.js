@@ -34,8 +34,9 @@ Page({
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
-    duration: 4000,
-    Lists:[
+    duration: 5000,
+    circular: true,
+    cardLists:[
       {
         "url": "../../images/card01.jpg",
         "title": "夏日 冰爽"
@@ -64,47 +65,23 @@ Page({
     ]
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  // onLoad: function (options) {
-  //   this.getImgUrls();
-  // },
-
-  // getImgUrls: function () {
-  //   var self = this;
-  //   wx.request({
-  //     url: '你的服务器地址...',
-  //     method: "GET",
-  //     success(res) {
-  //       console.log(res)
-  //       self.setData({
-  //         // imgUrls: res.data.bannerList,
-  //         // proList: res.data.centerList,
-  //         // bottomItem: res.data.bottom
-  //       })
-  //     }
-  //   })
-  // },
-
   toBanner: function (e) {
     var index = e.currentTarget.dataset.index;
     var imgUrls = this.data.imgUrls;
     var name = imgUrls[index].name;
     var url = imgUrls[index].url;
     wx.navigateTo({
-      url: '../..pages/detail/detail?name=' + name + '&url=' + url,
+      url: `../detail/detail?name=${name} url=${url}`
     })
   },
 
   toDetail: function (e) {
     var index = e.currentTarget.dataset.index;
-    var Lists = this.data.Lists;
-    var title = Lists[index].title;
-    var url = Lists[index].url;
-
+    var cardLists = this.data.cardLists;
+    var title = cardLists[index].title;
+    var url = cardLists[index].url;
     wx.navigateTo({
-      url: '../../deatil/detail?title=' + title + '&url=' + url,
+      url: `../detail/detail?title=${title} url=${url}`
     })
   },
 
