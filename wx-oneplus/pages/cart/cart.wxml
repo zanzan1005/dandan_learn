@@ -1,47 +1,18 @@
-<!-- <view class="content" wx:else>
-  <image class="cart" src="../../images/cart_bg.png" />
-  <view class="text">您的购物车里还没有商品</view>
-  <button class="btn" bindtap="toIndex">去购物</button>
-</view>
-<view class="box" wx:if="{{hasProductNum }}">
-  <view class="introduction">全场满99免运费</view>
-  <view class="products-prop">
-    <view class="pro-lists">
-      <view class="image"></view>
-      <view class="text">
-        <view class="pro-title"></view>
-        <view class="pro-price"></view>
-        <view class="del" bindtap="del_lists">×</view>
-        <view class="reduceNum" bindtap="reduceNum">-</view>
-        <input class="numInput" bindtap="changeNum" value="{{num}}" />
-        <view class="addNum" bindtap="addNum">+</view>
+<view class="header">全场满99免运费</view>
+<view class="lists">
+  <view class="cart" wx:for="{{cartLists}}" wx:key="{{index}}">
+    <view class="content">
+      <view class="image-box">
+        <image class="cart-image" src="{{item.url}}" />
       </view>
-    </view>
-  </view>
-  <view class="footer"></view>
-</view> -->
-
-<view class="box">
-  <view class="title">
-    <text class="desc">全场满99免运费</text>
-  </view>
-  <view class="lists" wx:for="{{lists}}" wx:key="{{index}}">
-    <view class="lists-content">
-      <image class="lists-logo" src="{{item.src}}" bindtap="toIndex" />
-      <view class="detail">
-        <view class="props">{{item.title}}</view>
-        <view class="props-price">{{item.price}}</view>
-        <view class="reduceNum" bindtap="reduceNum">-</view>
-        <input class="numInput" bindtap="changeNum" value="{{num}}" />
-        <view class="addNum" bindtap="addNum">+</view>
-        <view class="del" bindtap="del_lists">×</view>
+      <view class="top">
+        <view class="pro-name">{{item.name}}</view>
+        <view class="del">×</view>
+      </view>
+      <view class="footer">
+        <view class="price"></view>
+        <view class="pro-num"></view>
       </view>
     </view>
   </view>
 </view>
-
-<!-- <view class="content" wx:else>
-  <image class="cart" src="../../images/cart_bg.png" />
-  <view class="text">您的购物车里还没有商品</view>
-  <button class="btn" bindtap="toIndex">去购物</button>
-</view> -->

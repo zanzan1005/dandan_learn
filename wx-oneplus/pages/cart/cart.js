@@ -7,7 +7,13 @@ Page({
   data: {
     lists: [],
     totalNum: 0,
-    hasProductNum: false
+    hasProductNum: false,
+    cartLists: [
+      {
+        url: '../../images/product1.jpg',
+        name: ''
+      }
+    ]
   },
   toIndex: function () {
     wx.navigateTo({

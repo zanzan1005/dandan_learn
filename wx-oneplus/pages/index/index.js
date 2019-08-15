@@ -58,7 +58,6 @@ Page({
       {src:"../../images/title22.jpg",title:"闪充套装",price:"￥159", minPrice:"最低价 ￥199"},
       {src:"../../images/title15.jpg",title:"OnePlus 6T 全包保护壳",price:"￥119.4", minPrice:" 最低价 ￥149"},
     ],
-
     indicatorDots: true,
     autoplay: true,
     interval: 3000,
@@ -68,7 +67,11 @@ Page({
     navbar: ['商品精选', '耳机', '壳/膜','适配器/数据线','套装','生活馆'],
     currentTab: 0
   },
-  toProduct: function () {
+  toPage: function (res) {
+    console.log(res)
+  },
+  toProduct: function (res) {
+    console.log(res)
     wx.navigateTo({
       url: '../../pages/product/product',
     });
