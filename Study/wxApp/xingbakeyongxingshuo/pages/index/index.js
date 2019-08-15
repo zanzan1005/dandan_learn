@@ -39,28 +39,28 @@ Page({
     cardLists:[
       {
         "url": "../../images/card01.jpg",
-        "title": "夏日 冰爽"
+        "name": "夏日 冰爽"
       }, {
         "url": "../../images/card02.jpg",
-        "title": "DIY夏日祝福"
+        "name": "DIY夏日祝福"
       }, {
         "url": "../../images/card03.jpg",
-        "title": "冰饮派对"
+        "name": "冰饮派对"
       }, {
         "url": "../../images/card04.jpg",
-        "title": "酷爽一夏"
+        "name": "酷爽一夏"
       }, {
         "url": "../../images/card05.jpg",
-        "title": "我想你了"
+        "name": "我想你了"
       }, {
         "url": "../../images/card06.jpg",
-        "title": "有你真好"
+        "name": "有你真好"
       }, {
         "url": "../../images/card07.jpg",
-        "title": "咖啡有你"
+        "name": "咖啡有你"
       }, {
         "url": "../../images/card08.jpg",
-        "title": "生日快乐"
+        "name": "生日快乐"
       }
     ]
   },
@@ -70,18 +70,19 @@ Page({
     var imgUrls = this.data.imgUrls;
     var name = imgUrls[index].name;
     var url = imgUrls[index].url;
+    console.log(url)
     wx.navigateTo({
-      url: `../detail/detail?name=${name} url=${url}`
+      url: `../detail/detail?name=${name}&url=${url}`
     })
   },
 
   toDetail: function (e) {
     var index = e.currentTarget.dataset.index;
     var cardLists = this.data.cardLists;
-    var title = cardLists[index].title;
+    var name = cardLists[index].name;
     var url = cardLists[index].url;
     wx.navigateTo({
-      url: `../detail/detail?title=${title} url=${url}`
+      url: `../detail/detail?name=${name}&url=${url}`
     })
   },
 

@@ -1,5 +1,6 @@
+<!--pages/gridinfo/gridinfo.wxml-->
 <view class='pro-top'>
-  <image src='{{toppic}}'/>
+  <image src='{{url}}'/>
 </view>
 
 <view class='pro-mid'>

@@ -13,7 +13,7 @@
     <block class="card-block" wx:for="{{cardLists}}" wx:key="{{id}}">
       <view class="card" bindtap="toDetail" data-index="{{index}}">
         <image class="card-image" src="{{item.url}}" />
-        <view class="card-title">{{item.title}}</view>
+        <view class="card-title">{{item.name}}</view>
       </view>
     </block>
   </view>

@@ -85,15 +85,15 @@ Page({
  * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var self = this;
+    console.log(options)
     var proList = this.data.proList;
     for (var i = 0; i < proList.length; i++) {
       proList[i].showView = false;
     }
     proList[0].showView = true;
-    self.setData({
+    this.setData({
       barTitle:options.name,
-      toppic:options.toppic,
+      url:options.url,
       proList:proList
     })
   },
