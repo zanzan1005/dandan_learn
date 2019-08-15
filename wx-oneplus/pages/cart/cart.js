@@ -11,7 +11,13 @@ Page({
     cartLists: [
       {
         url: '../../images/product1.jpg',
-        name: ''
+        name: 'OnePlus 7 Pro 曜岩灰 6G+128G',
+        price: '￥3999.00'
+      },
+      {
+        url: '../../images/title2.jpg',
+        name: 'OnePlus 7 Pro 曜岩灰 6G+128G',
+        price: '￥3999.00'
       }
     ]
   },

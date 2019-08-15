@@ -18,25 +18,44 @@ page{
 
 .cart{
   width: 100%;
-  height: 200rpx;
-}
-
-.content{
-  height: 200rpx;
-  margin-left: 5%;
-  border: 1px solid red;
+  height: 300rpx;
+  border: 1px solid green;
 }
 
 .image-box{
   background-color: #f4f4f4;
-  margin-top: 40rpx;
-  width: 20%;
-  height: 80%;
-  left: 40px;
+  margin-top: 20rpx;
+  width: 23%;
+  height: 160rpx;
+  margin-left: 30rpx;
 }
 
 .cart-image{
-  width: 120rpx;
+  width: 140rpx;
   height: 140rpx;
+}
+
+.top{
+  display: flex;
+  width: 77%;
+  height: 50%;
+  border: 1px solid red;
+}
+
+.pro-name{
+  font-size: 14px;
+  margin-top: 30rpx;
+}
+
+.del{
+  margin-left: 60rpx;
+}
+
+.footer{
+  display: flex;
+}
+
+.price{
+  font-size: 14px;
 }
 
