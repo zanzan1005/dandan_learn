@@ -1,0 +1,51 @@
+<view class="main">
+    <view class="header">
+        <open-data type="userAvatarUrl" class="thumb"></open-data>
+        <open-data type="userNickName" lang="zh_CN" class="nickname"></open-data> 
+    </view>
+
+    <view class="redPpacket-wrapper">
+      <image src="../../images/hongbao.png" class="redPacket"/>
+    </view>
+
+    <view class="user_box">
+        <image class="userImage" src="../../images/my_order.png" />
+        <view class="userContent">我的订单</view>
+        <image class="arrow" src="../../images/right-arrow.png" />
+    </view>
+     <view class="user_box">
+        <image class="userImage" src="../../images/discount.png" />
+        <view class="userContent">优惠券</view>
+        <image class="arrow" src="../../images/right-arrow.png" />
+    </view>
+     <view class="user_box">
+        <image class="userImage" src="../../images/privilege_buy.png" />
+        <view class="userContent">特权购</view>
+        <image class="arrow" src="../../images/right-arrow.png" />
+    </view>
+     <view class="user_box">
+        <image class="userImage" src="../../images/group_booking.png" />
+        <view class="userContent">拼团</view>
+        <image class="arrow" src="../../images/right-arrow.png" />
+    </view>
+    <view class="user_box">
+        <image class="userImage" src="../../images/personal_icon_address.png" />
+        <view class="userContent">收货地址</view>
+        <image class="arrow" src="../../images/right-arrow.png" />
+    </view>
+    <view class="user_box">
+        <image class="userImage" src="../../images/about_us.png" />
+        <view class="userContent">关于我们</view>
+        <image class="arrow" src="../../images/right-arrow.png" />
+    </view>
+    <view class="user_box">
+        <image class="userImage" src="../../images/quality.png" />
+        <view class="userContent">资质证照</view>
+        <image class="arrow" src="../../images/right-arrow.png" />
+    </view>
+    <view class="user_box">
+        <image class="userImage" src="../../images/protocol_rule.png" />
+        <view class="userContent">协议规则</view>
+        <image class="arrow" src="../../images/right-arrow.png" />
+    </view>
+</view>

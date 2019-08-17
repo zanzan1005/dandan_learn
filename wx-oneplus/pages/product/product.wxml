@@ -53,12 +53,12 @@
   <view class="show-content">
     <view class="header">
       <view class="logo">
-        <image class="pro-logo" src="../../images/product1.jpg" />
+        <image class="pro-logo" src="{{src}}" />
       </view>
       <view class="description">
         <view class="description_title">
-          OnePlus 7 Pro 曜岩灰 6G+128G
-          <view class="description_price">￥3999.00</view>
+          {{title}}
+          <view class="description_price">{{price}}</view>
         </view>
       </view>
       <view class="del" bindtap="del">×</view>

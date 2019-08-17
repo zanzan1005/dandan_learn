@@ -41,3 +41,22 @@
       }
     })
     ```
+
+## 两个 page 之间传递数据
+
+  globalData
+  storage
+  通过页面的 url  /detail/index?id=xxx
+  订阅者发布者模式： 
+      A：触发一个事件
+      B：监听该事件
+    
+## e.target vs e.currentTarget
+  e.target 触发事件的目标元素
+  e.currentTarget 绑定事件的元素
+
+## JS 
+  ECMAScript: 规定了JS的语法
+  DOM: DOM（文档对象模型）是 HTML 和 XML 的应用程序接口（API）
+  BOM: 浏览器相关的 history 窗口 resize
+

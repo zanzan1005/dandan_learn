@@ -56,6 +56,7 @@ Page({
   },
   showDetail(e) {
     let item = e.target.dataset.item;
+    console.log(item)
     const contentId = item.contentId;
     let visitedID = wx.getStorageSync('visitedID') 
     || [];
@@ -68,7 +69,7 @@ Page({
     wx.setStorageSync('visitedID', visitedID);
     wx.navigateTo(
       {
-        url: `../detail/index?contentId=${contentId}`
+        url: `../detail/detail?contentId=${contentId}`
       }
     )
     // contentId

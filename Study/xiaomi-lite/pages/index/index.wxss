@@ -1,21 +1,51 @@
-/**index.wxss**/
-.userinfo {
+.header{
+  border-bottom: 10px solid #f3f3f3;
+}
+
+.search{
+  width: 100%;
+  height: 80rpx;
+  background: #83603f;
+}
+
+.searchBox{
+  width: 85%;
+  height: 60rpx;
+  border-radius: 30rpx;
+  background-color: #fff;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.searchIcon{
+  font-size: 10px;
+  margin-left: 17%;
+  margin-top: 20rpx;
+  color: #ccc;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.searchInput{
+  font-size: 13px;
+  color: #ccc;
+  margin-top: 10rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+swiper{
+  width: 100%;
 }
+
+.swiperImage{
+  width: 100%;
+  height: 600rpx;
+}
+
+.selectLogo{
+  width: 100%;
+  display: flex;
+}
+
+.logo{
+  width: 25%;
+  
+}
+

@@ -5,9 +5,10 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#83603f",
+    "navigationBarTitleText": "小米有品",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "white"
   },
   "sitemapLocation": "sitemap.json"
 }

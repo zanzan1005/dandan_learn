@@ -1,17 +1,17 @@
 <view class="header">全场满99免运费</view>
 
 <view class="lists">
-  <view class="cart" wx:for="{{cartLists}}" wx:key="{{index}}">
+  <view class="cart">
       <view class="image-box">
-        <image class="cart-image" src="{{item.url}}" />
+        <image class="cart-image" src="{{url}}" />
       </view>
       <view class="top">
-        <view class="pro-name">{{item.name}}</view>
+        <view class="pro-name">{{title}}</view>
         <view class="del">×</view>
       </view>
       <view class="footer">
-        <view class="price">{{item.price}}</view>
-        <view class="pro-num"></view>
+        <view class="price">{{price}}</view>
+        <view class="pro-num">{{num}}</view>
       </view>
     </view>
 </view>

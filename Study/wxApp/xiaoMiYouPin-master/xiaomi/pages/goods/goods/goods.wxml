@@ -1,0 +1,75 @@
+<scroll-view scroll-y  class="scrollView">
+  <view class="swiper-container"  >
+    <swiper class="swiper-box" indicator-dots="{{true}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+      <block wx:for="{{imgUrls}}" wx:key="{{item.id}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-img" />
+        </swiper-item>
+      </block>
+        <view class="dots">
+          <block wx:for="{{imgUrls}}" wx:key="unique">
+            <view class="dot{{index == swiperContent ? 'active' : ''}}"></view>
+          </block>
+        </view>
+    </swiper>
+  </view>
+  
+  <view class="detail-one">
+    <text>{{detail.detailOne}}</text> 
+  </view>
+  <view class="detail-two"><text>{{detail.detailTwo}}</text></view>
+  <view class="price">
+    ￥{{detail.price}}
+    <text class="oldPrice">￥{{detail.oldPrice}}</text>
+  </view>
+  
+  <view class="xiaomi">
+    <image class="xiaomi_img" src="../../../images/mi.jpg"/>
+    <text class="quality"><text>|</text>有品质,放心买!</text>
+  </view>
+
+  <view>
+    <image class="new-gift_bag" src="https://img.youpin.mi-img.com/yingkebao/fc6d5d9aad72244bc1ed17556acfb656.png?w=1080&h=120"/>
+  </view>
+  <view class="promotion">
+    <view>促销:<text class="discount">满件折</text>618狂欢【2件9折/3件8折】</view>
+  </view>
+</scroll-view>
+<view class="buy">
+  <view class="buy-icon">
+    <view class="icon" bindtap="skipIndex">
+      <image class="buy_img" src="../../../images/home_page.png"/>
+      <text>首页</text>
+    </view>
+    <view class="icon" bindtap="toShare">
+      <image class="buy_img" src="../../../images/share.png"/>
+      <text>分享</text>
+    </view>
+    <view class="icon" bindtap="skipCart">
+      <image class="buy_img" src="../../../images/cart.png"/>
+      <text >购物车</text>
+    </view>
+  </view>
+  <view class="buy-cart" bindtap="addCart">加入购物车</view>
+  <view class="buy-now" bindtap="buyNow">立即购买</view>
+</view>
+
+<view class="share-mask {{active ? 'active' : ''}}" bindtap="hideMask">
+  <view class="shares">  
+      <view class="share">分享</view>
+      <view class="share_content">
+        <view class="share_left">
+          <button catchtap="shares" class="shares-btn" open-type="share" hover-class="none">
+            <image class="shareImg" src="../../../images/wechat.png"/>
+            <text>发送给朋友</text>
+          </button>
+        </view>    
+        <view class="share_right">
+          <image class="shareImg" src="../../../images/poster.png"/>
+          <text>生成图库</text>
+        </view>
+      </view>
+      <view class="cancel">取消</view>
+  </view>
+</view>
+

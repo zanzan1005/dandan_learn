@@ -9,16 +9,16 @@ Page({
     totalNum: 0,
     hasProductNum: false,
     cartLists: [
-      {
-        url: '../../images/product1.jpg',
-        name: 'OnePlus 7 Pro 曜岩灰 6G+128G',
-        price: '￥3999.00'
-      },
-      {
-        url: '../../images/title2.jpg',
-        name: 'OnePlus 7 Pro 曜岩灰 6G+128G',
-        price: '￥3999.00'
-      }
+      // {
+      //   url: '../../images/product1.jpg',
+      //   name: 'OnePlus 7 Pro 曜岩灰 6G+128G',
+      //   price: '￥3999.00'
+      // },
+      // {
+      //   url: '../../images/title2.jpg',
+      //   name: 'OnePlus 7 Pro 曜岩灰 6G+128G',
+      //   price: '￥3999.00'
+      // }
     ]
   },
   toIndex: function () {
@@ -71,7 +71,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      title: options.title,
+      price: options.price,
+      num: options.num,
+      url: options.url
+    })
   },
 
   /**

@@ -1,0 +1,138 @@
+.page{
+  padding-bottom: 130rpx;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 3px solid #f4f3f3;
+}
+.address{
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: gray;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+}
+.arrow_img{
+  flex: 0 0 40rpx;
+  width: 35rpx;
+  height: 35rpx;
+  padding-top: 25rpx;
+  padding-right: 20rpx;
+}
+.detail{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  padding-left: 20rpx;
+  border-bottom: 1px solid #f4f3f3;
+}
+.good_wrapper{
+  display: flex;
+  margin: 0 10px;
+  border-bottom: 1px solid #f4f3f3;
+}
+.img{
+  flex: 0 0 150rpx;
+  width: 100rpx;
+  height: 100rpx;
+  padding: 50rpx 50rpx;
+}
+.description{
+  flex: 1;
+}
+.desc{
+  font-size: 30rpx;
+  padding-top: 20rpx;
+}
+.price{
+  font-size: 30rpx;
+  color: red;
+  padding: 20rpx 0;
+}
+.icon{
+  width: 35rpx;
+  height: 35rpx;
+}
+.support{
+  font-size: 25rpx;
+  color: gray;
+  padding-bottom: 20rpx;
+}
+.sale{
+  /* display: flex; */
+  margin: 0 10px;
+  border-bottom: 1px solid #f4f3f3;
+}
+.common{
+  display: inline-block;
+}
+.onSale{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  padding-left: 15rpx;
+}
+.use{
+  position: absolute;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: gray;
+  right: 0;
+}
+.content{
+  font-size: 25rpx;
+  color:gray;
+  margin-left: 60rpx;
+}
+.message{
+  padding-left: 15rpx;
+  border-bottom: 3px solid #f4f3f3;
+}
+.end{
+  display: flex;
+}
+.end_desc{
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  padding-left: 25rpx;
+}
+.end_price{
+  position: absolute;
+  right: 20rpx;
+  font-size: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color:red;
+}
+.pay{
+  display: flex;
+  width: 100%;
+  height: 110rpx;
+  position: fixed;
+  bottom: 0;
+  color:gray;
+}
+.totalPrice{
+  flex: 65%;
+  font-size: 30rpx;
+  color: #000;
+  padding: 30rpx 0 0 30rpx;
+  /* display: inline-block; */
+}
+.toPay{
+  flex: 35%;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  font-size: 30rpx;
+  padding-top: 30rpx;
+}

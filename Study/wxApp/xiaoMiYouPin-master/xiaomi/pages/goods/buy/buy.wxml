@@ -1,0 +1,54 @@
+<view class="page">
+  <view class="container">
+    <view class="address" bindtap="toAddress">没有地址信息,请点击添加地址</view>
+    <image class="arrow_img" src="../../../images/right-arrow.png"/>
+  </view>
+  <view class="detail">商品详情</view>
+  <view class="good_wrapper">
+    <view>
+      <image class="img" src="https://img.youpin.mi-img.com/800_pic/fde7041f27bc4249634e6edf74200d15.png@base@tag=imgScale&F=webp"/>
+    </view>
+    <view class="description">
+      <view class="desc">御泥坊美容酵主美肌酵素黑膜礼盒  (25ml*7*3) 21片/盒</view>
+      <view class="price">￥69</view>
+      <view >
+        <view><image class="icon" src="https://app.xiaomiyoupin.com/youpin/static/m/res/images/detail_icon_service.png"/></view>
+        <view class="support">支持7天无理由退货</view>
+      </view>
+    </view>
+  </view>
+  <view class="sale">
+    <view class="onSale common">优惠券/优惠码</view>
+    <view class="use common">已抵用10.00元
+      <image class="arrow_img" src="../../../images/right-arrow.png"/>
+    </view>
+  </view>
+  <view class="sale">
+    <view class="onSale common">发票类型</view>
+    <view class="use common">不开发票
+      <image class="arrow_img" src="../../../images/right-arrow.png"/>
+    </view>
+  </view>
+  <view class="message">
+    <view class="onSale common">买家留言</view>
+    <view class="content common">填写内容需与商家协商并确认,45字以内</view>
+  </view>
+
+  <view class="end">
+    <view class="end_desc">商品总价</view>
+    <view class="end_price">￥{{goods[0].goodsPrice}}</view>
+  </view>
+  <view class="end">
+    <view class="end_desc">运费</view>
+    <view class="end_price">￥{{goods[0].carriage}}</view>
+  </view>
+  <view class="end">
+    <view class="end_desc">优惠</view>
+    <view class="end_price">-￥{{goods[0].discounts}}</view>
+  </view>
+</view>
+<view class="pay">
+  <view class="totalPrice">合计:<text>￥{{sum}}</text></view>
+  <view class="toPay" bindtap="toPay">去支付</view>
+</view>
+

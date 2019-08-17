@@ -1,0 +1,190 @@
+.scrollView {
+  padding-bottom: 100rpx;
+  box-sizing: border-box;
+}
+
+.swiper-container{
+  width: 750rpx;
+  border-bottom: 2rpx solid #f4f3f3;
+}
+.swiper-box{
+  width: 750rpx;
+  height: 750rpx;
+}
+.slide-img {
+  width: 100%;
+  height: 100%;
+}
+/* .detail{
+  border-bottom: 3rpx solid #f4f3f3;
+} */
+.detail-one{
+  font-size: 35rpx;
+  margin: 20rpx 20rpx 0 20rpx;
+}
+.detail-two{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  color:gray;
+}
+.price{
+  font-size: 45rpx;
+  color:red;
+  padding: 20rpx 0 0 5rpx;
+  border-bottom: 5rpx solid #f4f3f3;
+}
+.oldPrice{
+  text-decoration: line-through;
+  font-size: 20rpx;
+  color:gray;
+}
+.xiaomi{
+  border-bottom: 6rpx solid #f4f3f3;
+}
+.xiaomi_img{
+  left: 0;
+  width: 170rpx;
+  height: 100rpx;
+}
+.quality{
+  position: absolute;
+  padding: 30rpx 0 0 30rpx;
+  font-size: 25rpx;
+  color:burlywood;
+}
+.new-gift_bag{
+  width: 100%;
+  height: 85rpx;
+  border-bottom: 6rpx solid #f4f3f3;
+}
+.promotion{
+  height: 60rpx;
+  font-size: 30rpx;
+  padding: 10rpx 0 0 20rpx;
+  border-bottom: 10rpx solid #f4f3f3;
+}
+.discount {
+  border: 1px solid red;
+  color: red;
+  margin: 10rpx 10rpx 0 10rpx;
+}
+.buy{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+.buy-icon{
+  flex: 1;
+  display: flex;
+  font-size: 30rpx;
+  background-color: #f2f2f2;
+  /* margin: 0 auto; */
+}
+.icon {
+  flex: 1;
+  height: 100rpx;
+  /* line-height: 100rpx; */
+  text-align: center;
+  font-size: 20rpx;
+  color:#a0a0a0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buy_img{
+  flex-shrink: 0;
+  width: 40rpx;
+  height: 40rpx;
+}
+.buy-cart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  /* height: 100rpx;
+  line-height: 100rpx; */
+  text-align: center;
+  flex: 1;
+  font-size: 30rpx;
+  color:#fff;
+  background-color: #d7b285;
+}
+.buy-now{
+  flex: 1;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color:#fff;
+  background-color: red;
+}
+.share-mask{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .7);
+  display: none;
+}
+.share-mask.active{
+  display: block;
+}
+.shares {
+  position: fixed;
+  width: 90%;
+  left: 5%;
+  text-align: center;
+  bottom: 50rpx;
+  background-color: #fff;
+  opacity: 1;
+  border-radius: 10rpx;
+}
+.share{
+  text-align: center;
+  line-height: 3;
+  opacity: 0.7;
+}
+.share_content{
+  display: flex;  
+  /* height: 300rpx; */
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
+  border-bottom: 1px solid #f4f3f3;
+  margin-top: 26rpx;
+  padding-bottom: 40rpx;
+}
+.share_left {
+  flex: 1;
+  font-size: 30rpx;
+  align-items: center;
+}
+.shares-btn{
+  line-height: 1.5;
+  font-size: 30rpx;
+  border: none;
+  background-color: #fff;
+  position: none;
+}
+.shares-btn::after{
+  border: 0;
+}
+.share_right{
+  flex: 1;
+  font-size: 30rpx;
+  align-items: center;
+}
+.shareImg{
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 14rpx;
+}
+.cancel{
+  height: 90rpx;
+  line-height: 90rpx;
+}

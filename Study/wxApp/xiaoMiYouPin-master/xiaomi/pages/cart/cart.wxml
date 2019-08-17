@@ -1,0 +1,52 @@
+<view class="main">
+    <view wx:if="{{hasGoods}}">
+        
+        <view class="goods-box">
+            <view class="cart-list" wx:for="{{carts}}" wx:key="{{index}}">
+                <icon wx:if="{{item.selected}}" type="success" color="red" data-index="{{index}}" class="cart-pro-select" bindtap="selectList" />
+                <icon wx:else type="circle" class="cart-pro-select" data-index="{{index}}" bindtap="selectList" />
+                <navigator class="cart-pro-goods" url="../details/details?id={{item.id}}">
+                    <image class="cart-thumb" src="{{item.image}}"></image>
+                </navigator>
+                <text class="cart-pro-name">{{item.title}}</text>
+                <text class="cart-pro-price">￥{{item.price}}</text>
+                <view class="btn_box">
+                    <button id="{{index}}" type="default" size="mini" bindtap="minusCount">-</button>
+                    <input value="{{item.num}}" />
+                    <button id="{{index}}" type="default" size="mini" bindtap="addCount">+</button>
+                </view>
+            </view>
+        </view>
+        <view class="cart-footer">
+            <icon wx:if="{{selectAllStatus}}" type="success_circle" color="#fff" class="total-select" bindtap="selectAll" />
+            <icon wx:else type="circle" color="#fff" class="total-select" bindtap="selectAll" />
+            <navigator url="../orders/orders">
+            </navigator>
+            <view class="content">
+                <view class="content-left">
+                    <text>全选</text>
+                    <view >
+                        <text class="total">合计:</text>
+                        <text class="cart-toatl-price">￥{{totalPrice}}</text>
+                    </view> 
+               </view>
+                <view class="content-right">
+                    <text class="account" bindtap="toBuy">去结算({{totalNum}})</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view wx:else>
+        <view class="cart">
+            <image class="cart_grey" src="../../images/cart_grey.png" />
+            <view class="cart_right">
+                <view class="cartContent">购物车还是空的哦</view>
+                <button class="btn" size="mini" bindtap="goIndex">去逛逛</button>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- <view wx:for="{{carts}}" wx:key="">
+    <image src="{{item.image}}" />
+</view> -->
+<!-- <text>sss</text> -->

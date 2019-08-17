@@ -1,0 +1,74 @@
+<view class="page_header"> 
+  <!-- 搜索 -->
+  <view class="search">  
+    <view class="search_arr">  
+      <icon class="searchcion" size='18' type='search'></icon>  
+      <input class="" disabled placeholder="GO有品的耍最高直降500" value="{{searchValue}}"/>  
+    </view>  
+  </view>  
+  <!-- 轮播图 -->
+  <view class="swiper-container"  >
+    <swiper class="swiper-box" indicator-dots="{{true}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" 
+      bindchange="{{swiperchange}}" >
+      <block wx:for="{{slideshow}}" wx:key="{{item.id}}">
+        <swiper-item>
+          <image src="{{item.img}}" class="slide-img" data-id="{{item.id}}" bindtap="toSwiper" />
+        </swiper-item>
+      </block>
+        <view class="dots">
+          <block wx:for="{{imgUrls}}" wx:key="unique">
+            <view class="dot{{index == swiperContent ? 'active' : ''}}"></view>
+          </block>
+        </view>
+    </swiper>
+  </view>    
+  <view class="navigation_covers" bindtap="toCover">
+      <block wx:for="{{cover}}" wx:key="{{item.cid}}">
+        <view class="navigation_cover">
+          <image src="{{item.coverImg}}" class="coverImg"/>
+          <view class="cover_content">{{item.coverName}}</view>
+        </view>
+      </block>
+  </view>
+  
+  <view>
+    <image src="../../images/hongbao.png" class="redPacket"/>
+  </view>
+</view>
+  
+
+<view class="page_body">
+  <view class="more funding">小米众筹</view>
+  <view class="more more1">更多</view>
+  <image class="more arrow" src="../../images/right-arrow.png" />
+  <view class="blood aa"><image  src="../../images/turgoscope.png" /></view>
+  <view class="scope aa">九安智能血压计</view>
+  <view class="inquiry">三甲医生在线问诊,WI-FI简易连接,5.2英寸大屏,轻松在家测量问诊</view>
+  <view clanewPs="price">￥199</view>
+  <view class="support"><view class="jiu bb">9958</view> /2000 人支持 <view class="fire bb">火</view></view>
+  <view class="progress"><progress percent="100" stroke-width="4" activeColor="#f78f12"/></view>
+</view>
+
+<view class="page_goods">
+  <view class="good goods">今日有品</view>
+  <view class="good more2">更多</view>
+  <image class="good arrow1" src="../../images/right-arrow.png" />
+  <!-- 商品列表 -->
+  <view class="Goods-lists">
+    <block wx:for="{{detail}}" wx:key="{{item.id}}" >
+      <view class="Goods-list" bindtap="toLists" data-id="{{item.id}}">
+        <image src="{{item.goodImg}}" class="goodImg"/>
+          <view class="detail">
+            <view class="detailOne">{{item.detailOne}}</view>
+            <view class="detailTwo">{{item.detailTwo}}</view>
+            <view class="Goods_price">￥{{item.price}}</view>
+          </view>
+      </view>
+    </block>
+  </view> 
+</view>
+
+<view class="page_footer">更多新品,请下载有品APP查看</view>   
+
+
+

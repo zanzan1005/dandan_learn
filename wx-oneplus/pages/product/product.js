@@ -7,7 +7,6 @@ Page({
   data: {
     num: 1,
     minStatus: false,
-    productNum: 0,
     imgUrls: [
       // '../../images/product1.jpg',
       // '../../images/product2.jpg',
@@ -35,14 +34,14 @@ Page({
     });
   },
   buy: function (e) {
+    console.log(e)
+    var title = this.data.title
+    var price = this.data.price
+    var num = this.data.num
+    var url = this.data.url
+    console.log(url)
     wx.switchTab({
-      url: '../../pages/cart/cart',
-      success: (res) => {
-        wx.setStorage({
-          key: 'product_detail',
-          data: this.data.ProductNum
-        })
-      }
+      url: `../../pages/cart/cart?title=${title}&price=${price}&num=${num}&url=${url}`
     })
   },
   reduceNum: function () {
@@ -73,16 +72,21 @@ Page({
       minStatus: minStatus
     })
   },
-  toCard: function () {
+
+  toCard: function (e) {
     wx.switchTab({
       url: '../../pages/cart/cart'
     });
   },
+
   onClose() {
     this.setData({ show: false });
   },
+
   change: function () {
-    this.setData({ show: true });
+    this.setData({ 
+      show: true 
+    })
   },
   // toProductDetail: function () {
   //   wx.navigateTo({

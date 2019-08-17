@@ -4,10 +4,26 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    imgUrls: [
+      '../../images/banner1.jpg',
+      '../../images/banner2.jpg',
+      '../../images/banner1.jpg',
+      '../../images/banner2.jpg',
+      '../../images/banner1.jpg',
+      '../../images/banner2.jpg'
+    ],
+    logoLists: [
+      {src: '../../images/logo.png',title: '每日新品'},
+      {src: '../../images/logo.png',title: '小米众筹'},
+      {src: '../../images/logo.png',title: '限时抢购'},
+      {src: '../../images/logo.png',title: '热销榜单'},
+      {src: '../../images/logo.png',title: '随便逛逛'}
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 2000,
+    circular: true
   },
   //事件处理函数
   bindViewTap: function() {

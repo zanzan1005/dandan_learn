@@ -1,13 +1,28 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="header">
+  <!-- 搜索框 -->
+  <view class="search">
+    <view class="searchBox">
+      <icon class="searchIcon" type="search" size="14"></icon>
+      <input class="searchInput" type="text"
+      placeholder="爆品最高特惠1700元"/>
+      </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <!-- 滚动框 -->
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{id}}">
+    <swiper-item>
+      <image src="{{item}}" class="swiperImage"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 五个选择logo -->
+<view class="selectLogo">
+  <view class="logo" wx:for="{{logoLists}}" wx:key="{{id}}">
+    <view class="logoImageBox">
+      <image src="{{item.src}}"/>
+    </view>
+    <view class="title">{{item.title}}</view>
   </view>
+</view>
 </view>

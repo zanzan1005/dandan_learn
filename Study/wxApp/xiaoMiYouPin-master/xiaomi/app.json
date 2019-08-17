@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/goods/goods/goods",
+    "pages/cart/cart",
+    "pages/goods/buy/buy",
+    "pages/category/category",
+    "pages/user/user",
+    "pages/swiper/swiperOne/swiperOne",
+    "pages/swiper/swiperTwo/swiperTwo",
+    "pages/swiper/swiperThree/swiperThree",
+    "pages/swiper/swiperFour/swiperFour",
+    "pages/swiper/swiperFive/swiperFive",
+    "pages/swiper/swiperSix/swiperSix",
+    "pages/cover/cover",
+    "pages/goods/addressList/addressList",
+    "pages/goods/address/address"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#AB956D",
+    "navigationBarTitleText": "小米有品",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#b7b7b7",
+    "selectedColor": "#AB956D",
+    "borderStyle": "black",
+    "backgroundColor": "#f5f5f5",
+    "selectedindex": 1,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/12.png",
+        "selectedIconPath": "images/11.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "iconPath": "images/22.png",
+        "selectedIconPath": "images/21.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "images/32.png",
+        "selectedIconPath": "images/31.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/42.png",
+        "selectedIconPath": "images/41.png",
+        "text": "个人"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
