@@ -67,15 +67,28 @@ Page({
     navbar: ['商品精选', '耳机', '壳/膜','适配器/数据线','套装','生活馆'],
     currentTab: 0
   },
-  toPage: function (res) {
-    console.log(res)
+
+  toPage: function (e) {
+    console.log(e)
+    var index = e.currentTarget.dataset.index;
+    console.log(index)
+    var imgUrls = this.data.imgUrls;
+    console.log(imgUrls)
+    var item = imgUrls[index].item;
+    console.log(item)
   },
-  toProduct: function (res) {
-    console.log(res)
+
+  toProduct: function (e) {
+    var index = e.currentTarget.dataset.index;
+    var productLists1 = this.data.productLists1
+    var src = productLists1[index].src
+    var title = productLists1[index].title
+    var price = productLists1[index].price
     wx.navigateTo({
-      url: '../../pages/product/product',
+      url: `../../pages/product/product?src=${src}&title=${title}&price=${price}`,
     });
   },
+
   navbarTap: function(e){
     this.setData({
       currentTab: e.currentTarget.dataset.idx

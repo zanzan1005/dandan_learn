@@ -9,10 +9,10 @@ Page({
     minStatus: false,
     productNum: 0,
     imgUrls: [
-      '../../images/product1.jpg',
-      '../../images/product2.jpg',
-      '../../images/product3.jpg',
-      '../../images/product4.jpg'
+      // '../../images/product1.jpg',
+      // '../../images/product2.jpg',
+      // '../../images/product3.jpg',
+      // '../../images/product4.jpg'
     ],
     indicatorDots: true,
     autoplay: true,
@@ -94,7 +94,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options)
+    this.setData({
+      barTitle: options.title,
+      src: options.src,
+      title: options.title,
+      price: options.price
+    })
   },
 
   /**

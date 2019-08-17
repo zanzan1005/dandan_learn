@@ -1,19 +1,19 @@
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" class="swiper">
-  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+  <block>
     <swiper-item>
-      <image src="{{item}}" class="slide-image" />
+      <image src="{{src}}" class="slide-image" />
     </swiper-item>
   </block>
 </swiper>
 
 <view class="centent">
   <view class="desc">
-    <view class="title">OnePlus 7 Pro 曜岩灰 6G+128G</view>
-    <view class="price">￥3999.00</view>
+    <view class="title">{{title}}</view>
+    <view class="price">{{price}}</view>
   </view>
   <view class="select">
     <view class="left">已选择：</view>
-    <view class="right">OnePlus 7 Pro 曜岩灰 6G+128G</view>
+    <view class="right">{{title}}</view>
   </view>
   <view class="service">
     <view class="title1">常见问题</view>

@@ -1,16 +1,16 @@
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" class="swiper">
   <block wx:for="{{imgUrls}}" wx:key="{{index}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image"  bindtap="toPage"/>
+      <image src="{{item}}" class="slide-image" data-index="{{index}}" bindtap="toPage"/>
     </swiper-item>
   </block>
 </swiper>
 
 <van-tabs active="{{ active }}">
   <van-tab title="商品精选">
-    <view class="content" bindtap="toProduct">
-      <view class="product" wx:for="{{productLists1}}" wx:key="{{index}}">
-        <image src="{{item.src}}" class="product-image" bindtap="oneplus7Pro" />
+    <view class="content">
+      <view class="product" wx:for="{{productLists1}}" wx:key="{{index}}" >
+        <image src="{{item.src}}" class="product-image" bindtap="toProduct" data-index="{{index}}"/>
         <view class="desc">
           <view class="title">{{item.title}}</view>
           <view class="container">
@@ -26,8 +26,8 @@
 
   <van-tab title="耳机">
       <view class="content">
-      <view class="product" wx:for="{{productLists2}}" wx:key="{{index}}">
-        <image src="{{item.src}}" class="product-image" bindtap="oneplus7Pro" />
+      <view class="product" wx:for="{{productLists2}}" wx:key="{{id}}" >
+        <image src="{{item.src}}" class="product-image" bindtap="toProduct" data-index="{{index}}"/>
         <view class="desc">
           <view class="title">{{item.title}}</view>
           <view class="container">
@@ -42,8 +42,8 @@
 
   <van-tab title="壳/膜">
       <view class="content">
-      <view class="product" wx:for="{{productLists3}}" wx:key="{{index}}">
-        <image src="{{item.src}}" class="product-image" bindtap="oneplus7Pro" />
+      <view class="product" wx:for="{{productLists3}}" wx:key="{{id}}">
+        <image src="{{item.src}}" class="product-image" bindtap="toProduct" data-index="{{index}}"/>
         <view class="desc">
           <view class="title">{{item.title}}</view>
           <view class="container">
@@ -58,8 +58,8 @@
 
   <van-tab title="适配器/数据线">
       <view class="content">
-      <view class="product" wx:for="{{productLists1}}" wx:key="{{index}}">
-        <image src="{{item.src}}" class="product-image" bindtap="oneplus7Pro" />
+      <view class="product" wx:for="{{productLists1}}" wx:key="{{id}}">
+        <image src="{{item.src}}" class="product-image" bindtap="toProduct" data-index="{{index}}"/>
         <view class="desc">
           <view class="title">{{item.title}}</view>
           <view class="container">
@@ -74,8 +74,8 @@
 
   <van-tab title="套装">
       <view class="content">
-      <view class="product" wx:for="{{productLists2}}" wx:key="{{index}}">
-        <image src="{{item.src}}" class="product-image" bindtap="oneplus7Pro" />
+      <view class="product" wx:for="{{productLists2}}" wx:key="{{id}}">
+        <image src="{{item.src}}" class="product-image" bindtap="toProduct" data-index="{{index}}"/>
         <view class="desc">
           <view class="title">{{item.title}}</view>
           <view class="container">
@@ -90,8 +90,8 @@
 
   <van-tab title="生活馆">
       <view class="content">
-      <view class="product" wx:for="{{productLists3}}" wx:key="{{index}}">
-        <image src="{{item.src}}" class="product-image" bindtap="oneplus7Pro" />
+      <view class="product" wx:for="{{productLists3}}" wx:key="{{id}}">
+        <image src="{{item.src}}" class="product-image" bindtap="toProduct" data-index="{{index}}"/>
         <view class="desc">
           <view class="title">{{item.title}}</view>
           <view class="container">
