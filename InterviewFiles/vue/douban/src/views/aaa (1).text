@@ -1,0 +1,235 @@
+{
+	"code": 1001,
+	"errmsg": "",
+	"result": {
+		"movie": {
+			"movieTypes": ["剧情", "动画", "奇幻"],
+			"isPlay": 1,
+			"viewCount": 149,
+			"casts": [{
+				"name": "柊瑠美",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1463193210.13.jpg"
+			}, {
+				"name": "入野自由",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p44986.jpg"
+			}, {
+				"name": "夏木真理",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1376151005.51.jpg"
+			}, {
+				"name": "菅原文太",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p8555.jpg"
+			}, {
+				"name": "中村彰男",
+				"avatar": "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517449056.17.jpg"
+			}],
+			"_id": "5d51d36e5a5dc0e409705a3d",
+			"video": "http://vt1.doubanio.com/201908130500/a9f703a752f969796370c718692c95c8/view/movie/M/402480761.mp4",
+			"author": "宫崎骏",
+			"duration": "125分钟",
+			"rate": 9.3,
+			"doubanId": 1291561,
+			"poster": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2557573348.jpg",
+			"summary": "千寻和爸爸妈妈一同驱车前往新家，在郊外的小路上不慎进入了神秘的隧道——他们去到了另外一个诡异世界—一个中世纪的小镇。远处飘来食物的香味，爸爸妈妈大快朵颐，孰料之后变成了猪！这时小镇上渐渐来了许多样子古怪、半透明的人。\n                                    \n                                　　千寻仓皇逃出，一个叫小白的人救了他，喂了她阻止身体消 失的药，并且告诉她怎样去找锅炉爷爷以及汤婆婆，而且必须获得一份工作才能不被魔法变成别的东西。\n                                    \n                                　　千寻在小白的帮助下幸运地获得了一份在浴池打杂的工作。渐渐她不再被那些怪模怪样的人吓倒，并从小玲那儿知道了小白是凶恶的汤婆婆的弟子。\n                                    \n                                　　一次，千寻发现小白被一群白色飞舞的纸人打伤，为了救受伤的小白，她用河神送给她的药丸驱出了小白身体内的封印以及守封印的小妖精，但小白还是没有醒过来。\n                                    \n                                　　为了救小白，千寻又踏上了她的冒险之旅。",
+			"cover": "https://img1.doubanio.com/img/trailer/medium/2560057908.jpg",
+			"pubdate": "2019-06-21(中国大陆)",
+			"title": "千与千寻",
+			"createdAt": "2019-08-13T02:43:35.576Z",
+			"updatedAt": "2019-08-13T06:52:59.438Z"
+		},
+		"relativeMovies": [{
+			"movieTypes": ["剧情", "动画", "奇幻"],
+			"isPlay": 1,
+			"viewCount": 149,
+			"casts": [{
+				"name": "柊瑠美",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1463193210.13.jpg"
+			}, {
+				"name": "入野自由",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p44986.jpg"
+			}, {
+				"name": "夏木真理",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1376151005.51.jpg"
+			}, {
+				"name": "菅原文太",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p8555.jpg"
+			}, {
+				"name": "中村彰男",
+				"avatar": "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1517449056.17.jpg"
+			}],
+			"_id": "5d51d36e5a5dc0e409705a3d",
+			"video": "http://vt1.doubanio.com/201908130500/a9f703a752f969796370c718692c95c8/view/movie/M/402480761.mp4",
+			"author": "宫崎骏",
+			"duration": "125分钟",
+			"rate": 9.3,
+			"doubanId": 1291561,
+			"poster": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2557573348.jpg",
+			"summary": "千寻和爸爸妈妈一同驱车前往新家，在郊外的小路上不慎进入了神秘的隧道——他们去到了另外一个诡异世界—一个中世纪的小镇。远处飘来食物的香味，爸爸妈妈大快朵颐，孰料之后变成了猪！这时小镇上渐渐来了许多样子古怪、半透明的人。\n                                    \n                                　　千寻仓皇逃出，一个叫小白的人救了他，喂了她阻止身体消 失的药，并且告诉她怎样去找锅炉爷爷以及汤婆婆，而且必须获得一份工作才能不被魔法变成别的东西。\n                                    \n                                　　千寻在小白的帮助下幸运地获得了一份在浴池打杂的工作。渐渐她不再被那些怪模怪样的人吓倒，并从小玲那儿知道了小白是凶恶的汤婆婆的弟子。\n                                    \n                                　　一次，千寻发现小白被一群白色飞舞的纸人打伤，为了救受伤的小白，她用河神送给她的药丸驱出了小白身体内的封印以及守封印的小妖精，但小白还是没有醒过来。\n                                    \n                                　　为了救小白，千寻又踏上了她的冒险之旅。",
+			"cover": "https://img1.doubanio.com/img/trailer/medium/2560057908.jpg",
+			"pubdate": "2019-06-21(中国大陆)",
+			"title": "千与千寻",
+			"createdAt": "2019-08-13T02:43:35.576Z",
+			"updatedAt": "2019-08-13T06:52:59.438Z"
+		}, {
+			"movieTypes": ["剧情", "喜剧", "动画", "奇幻"],
+			"isPlay": 1,
+			"viewCount": 17,
+			"casts": [{
+				"name": "吕艳婷",
+				"avatar": "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1564150860.79.jpg"
+			}, {
+				"name": "囧森瑟夫",
+				"avatar": "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1563583632.39.jpg"
+			}, {
+				"name": "瀚墨",
+				"avatar": "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1563156886.49.jpg"
+			}, {
+				"name": "陈浩",
+				"avatar": "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1564150837.59.jpg"
+			}, {
+				"name": "绿绮",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1563242123.95.jpg"
+			}],
+			"_id": "5d51d3565a5dc0e409705a1f",
+			"video": "http://vt1.doubanio.com/201908130500/e138e4947f36c3393e474bfa786d32e8/view/movie/M/402500477.mp4",
+			"author": "饺子",
+			"duration": "110分钟",
+			"rate": 8.6,
+			"doubanId": 26794435,
+			"poster": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2563780504.jpg",
+			"summary": "天地灵气孕育出一颗能量巨大的混元珠，元始天尊将混元珠提炼成灵珠和魔丸，灵珠投胎为人，助周伐纣时可堪大用；而魔丸则会诞出魔王，为祸人间。元始天尊启动了天劫咒语，3年后天雷将会降临，摧毁魔丸。太乙受命将灵珠托生于陈塘关李靖家的儿子哪吒身上。然而阴差阳错，灵珠和魔丸竟然被掉包。本应是灵珠英雄的哪吒却成了混世大魔王。调皮捣蛋顽劣不堪的哪吒却徒有一颗做英雄的心。然而面对众人对魔丸的误解和即将来临的天雷的降临，哪吒是否命中注定会立地成魔？他将何去何从？",
+			"cover": "https://img1.doubanio.com/img/trailer/medium/2563785397.jpg",
+			"pubdate": "2019-07-26(中国大陆)",
+			"title": "哪吒之魔童降世",
+			"createdAt": "2019-08-13T02:44:49.349Z",
+			"updatedAt": "2019-08-13T06:49:49.509Z"
+		}, {
+			"movieTypes": ["剧情", "悬疑", "惊悚", "犯罪"],
+			"isPlay": 0,
+			"viewCount": 0,
+			"casts": [{
+				"name": "克林特·伊斯特伍德",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1515234371.83.jpg"
+			}, {
+				"name": "布莱德利·库珀",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p12956.jpg"
+			}, {
+				"name": "劳伦斯·菲什伯恩",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1490098154.3.jpg"
+			}, {
+				"name": "迈克尔·佩纳",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1454118774.76.jpg"
+			}, {
+				"name": "黛安·韦斯特",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p4774.jpg"
+			}],
+			"_id": "5d51d38f5a5dc0e409705a4e",
+			"video": "http://vt1.doubanio.com/201908130501/fb6ae1b64971ed0a0bc243d33879bc24/view/movie/M/402500960.mp4",
+			"author": "克林特·伊斯特伍德",
+			"duration": "116分钟",
+			"rate": 7.9,
+			"doubanId": 30135113,
+			"poster": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2563626309.jpg",
+			"summary": "克林特·伊斯特伍德饰演厄尔·斯通，一个破产且独居的八旬老人。当房产因资不抵债被扣押拍卖时，厄尔得到一份只需要他开车的工作——这份工作足够简单，但厄尔不知道的是，他成为了墨西哥贩毒集团的一名运毒者。他完成的非常出色，事实上经由他运输的毒品越来越多，以至于后来贩毒集团专门给他配备了一名对接人。但是，暗中盯上厄尔的并不只有贩毒集团，这位神秘的新晋运毒者也吸引了美国缉毒局特工科林·贝茨的注意。虽然厄尔的财务问题就此得到解决，但他曾经犯下的种种人生错误也逐渐开始带来沉重的压力。在被执法部门逮捕归案，或者被贩毒集团下毒手之前，厄尔还有足够的时间来纠正错误吗？",
+			"cover": "https://img3.doubanio.com/img/trailer/medium/2564911325.jpg",
+			"pubdate": "2019-08-26(中国大陆)",
+			"title": "骡子"
+		}, {
+			"movieTypes": ["剧情", "悬疑", "犯罪"],
+			"isPlay": 1,
+			"viewCount": 30,
+			"casts": [{
+				"name": "查理·汉纳姆",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1410114704.04.jpg"
+			}, {
+				"name": "拉米·马雷克",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1860.jpg"
+			}, {
+				"name": "汤米·弗拉纳根",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p4770.jpg"
+			}, {
+				"name": "伊芙·休森",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1450699845.34.jpg"
+			}, {
+				"name": "迈克尔·索恰",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p23274.jpg"
+			}],
+			"_id": "5d51d3765a5dc0e409705a46",
+			"video": "http://vt1.doubanio.com/201908130500/c11ff28938feec09c23695d79c259010/view/movie/M/402330379.mp4",
+			"author": "迈克尔·诺尔",
+			"duration": "133分钟",
+			"rate": 7.5,
+			"doubanId": 26636537,
+			"poster": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2561899354.jpg",
+			"summary": "影片翻拍自1973年史蒂夫·麦奎因与达斯汀·霍夫曼主演的同名经典越狱电影，讲述了湖南哥饰演的职业扒手亨利被人陷害杀害一名皮条客，从而流放至大海环绕的法属圭亚那的监狱服刑，因为胸前有一处蝴蝶纹身，所以同窗狱友都叫他“巴比龙”。\n                                    \n                                　　在踏入监狱的那一天开始，巴比龙就策划越狱，但越狱是需要用金钱去贿赂看守，同时购买逃跑船只的，于是他将目光投向了同时服刑的伪造专家，同时是百万富翁，由拉米·马雷克饰演的Louis，用保证德加安全的方式获得其金钱资助，两人结成同盟……",
+			"cover": "https://img3.doubanio.com/img/trailer/medium/2527172735.jpg",
+			"pubdate": "2019-07-26(中国大陆)",
+			"title": "巴比龙",
+			"createdAt": "2019-08-13T03:19:26.082Z",
+			"updatedAt": "2019-08-13T06:49:06.014Z"
+		}, {
+			"movieTypes": ["动作", "动画", "冒险"],
+			"isPlay": 0,
+			"viewCount": 0,
+			"casts": [{
+				"name": "杨光普照",
+				"avatar": "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1543991932.57.jpg"
+			}, {
+				"name": "孟宇",
+				"avatar": "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1534416150.87.jpg"
+			}, {
+				"name": "张喆",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1547612579.3.jpg"
+			}, {
+				"name": "郭政建",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1478051011.64.jpg"
+			}, {
+				"name": "林惊雷",
+				"avatar": "https://img3.doubanio.com/f/movie/8dd0c794499fe925ae2ae89ee30cd225750457b4/pics/movie/celebrity"
+			}],
+			"_id": "5d51d3ad5a5dc0e409705a6a",
+			"video": "http://vt1.doubanio.com/201908130501/d2af1bf24c3dd46a28ea377e0413a886/view/movie/M/402340575.mp4",
+			"author": "孙海鹏",
+			"duration": "98分钟",
+			"rate": 7.5,
+			"doubanId": 26290398,
+			"poster": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2563536098.jpg",
+			"summary": "这是一个美食构成的世界。\n                                    \n                                　　传说女娲以神通铸成五味石，赋予食物味道和灵魂。在这里山川、湖泊都由美食组成：芝士崖、面包山、洋葱石林、鸡汤湖……形形色色的食物生活在这个世界，有着自己的故事和江湖。武艺平平的包子包强( 杨光普照 配音)，为了实现自己的英雄梦想，加入了面仙国的舰队出海抗击海盗，却遭到了咸鱼海盗伏击。一番混战后，包强和海盗雇佣的赏金浪人寿司武藏（孟宇 配音）流落荒岛，为了找到各自的伙伴，水火不融的两人开启了一段啼笑皆非的冒险。",
+			"cover": "https://img3.doubanio.com/img/trailer/medium/2529672216.jpg",
+			"pubdate": "2018-08-17(中国大陆)",
+			"title": "美食大冒险之英雄烩"
+		}, {
+			"movieTypes": ["剧情", "动画", "冒险"],
+			"isPlay": 1,
+			"viewCount": 3,
+			"casts": [{
+				"name": "唐纳德·格洛弗",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1466186775.21.jpg"
+			}, {
+				"name": "阿尔法·伍达德",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1422444822.86.jpg"
+			}, {
+				"name": "詹姆斯·厄尔·琼斯",
+				"avatar": "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1490091638.27.jpg"
+			}, {
+				"name": "切瓦特·埃加福特",
+				"avatar": "https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p9322.jpg"
+			}, {
+				"name": "科甘-迈克尔·凯",
+				"avatar": "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1433487259.19.jpg"
+			}],
+			"_id": "5d51d3685a5dc0e409705a38",
+			"video": "http://vt1.doubanio.com/201908130500/759515078dbd2e112f33dde8f08c55b6/view/movie/M/402480591.mp4",
+			"author": "乔恩·费儒",
+			"duration": "118分钟",
+			"rate": 7.4,
+			"doubanId": 26884354,
+			"poster": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2559742751.jpg",
+			"summary": "非洲大草原上一轮红日冉冉升起，为高大的乞力马扎罗山披上层金色的光纱，所有的动物涌向了同一个地方——荣耀石，兴奋地等待着一个重大消息的宣布：它们的国王木法沙将迎来自己的新生儿。\n                                    \n                                　　这个新生儿就是小狮子辛巴，它是木法沙的法定接班人、荣耀石未来的国王。\n                                    \n                                　　小狮子王辛巴在众多热情的朋友的陪伴下，不但经历了生命中最光荣的时刻，也遭遇了最艰难的挑战，最后终于成为了森林之王，也在周而复始生生不息的自然中体会出生命的真义。",
+			"cover": "https://img1.doubanio.com/img/trailer/medium/2559659528.jpg",
+			"pubdate": "2019-07-12(中国大陆)",
+			"title": "狮子王",
+			"createdAt": "2019-08-13T03:56:33.081Z",
+			"updatedAt": "2019-08-13T03:57:45.027Z"
+		}]
+	}
+}
