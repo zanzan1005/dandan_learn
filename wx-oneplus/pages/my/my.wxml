@@ -1,7 +1,9 @@
 <view class="header">
   <view class="head">
-    <image class="photo" src="../../images/head.jpg" />
-    <view class="id">西门吹赞</view>
+    <!-- <image class="photo" src="../../images/head.jpg" />
+    <view class="id">西门吹赞</view> -->
+       <open-data type="userAvatarUrl" class="thumb"></open-data>
+        <open-data type="userNickName" lang="zh_CN" class="nickName"></open-data> 
   </view>
 </view>
 <view class="weui-cells weui-cells_after-title">

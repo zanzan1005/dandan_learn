@@ -1,82 +1,19 @@
-// pages/cart/cart.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    lists: [],
-    totalNum: 0,
-    hasProductNum: false,
-    cartLists: [
-      // {
-      //   url: '../../images/product1.jpg',
-      //   name: 'OnePlus 7 Pro 曜岩灰 6G+128G',
-      //   price: '￥3999.00'
-      // },
-      // {
-      //   url: '../../images/title2.jpg',
-      //   name: 'OnePlus 7 Pro 曜岩灰 6G+128G',
-      //   price: '￥3999.00'
-      // }
-    ]
+    cats: [],
+    hasList: false,
+    totalPrice: 0,
+    selectAllStatus: true
   },
-  toIndex: function () {
-    wx.navigateTo({
-      url: '../../pages/product/product'
-    })
-  },
-  //存储数组函数
-  upLists(e) {
-    wx.setStorage({
-      key: 'lists',
-      data: this.data.lists
-    })
-  },
-  //存储购物车数量函数
-  getProductNum(e) {
-    let totalNum = this.data.totalNum;
-    wx.getStorage({
-      key: 'product_detail',
-      data: totalNum
-    })
-  },
-  //取得购物车数量函数
-  PutProductNum (e) {
-    wx.getStorage({
-      key: 'product_detail',
-      success: (res)=>{
-        this.setData({
-          hasProductNum: res.data
-        })
-      },
-    })
-  },
-  getProductNum(e) {
-
-  },
-  del_lists: function () {
-
-  },
-  reduceNum: function () {},
-  changeNum: function () {},
-  addNum: function () {},
-  toIndex: function () {
-    wx.switchTab({
-      url: '../../pages/index/index'
-    })
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      title: options.title,
-      price: options.price,
-      num: options.num,
-      url: options.url
-    })
+
   },
 
   /**
@@ -90,9 +27,86 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    setTimeout(() => {
+      this.setData({
+        hasList: true,
+        carts: [
+          { id: 1, title: 'OnePlus 7 Pro', image: '../../images/product1.jpg', num: 1, price: 3999, selected: true },
+          { id: 2, title: 'OnePlus 7', image: '../../images/title2.jpg', num: 1, price: 2999, selected: true }
+        ]
+      });
+      this.getTotalPrice();
+    }, 1000);
   },
-
+  getTotalPrice() {
+    let carts = this.data.carts;
+    let total = 0;
+    for (let i = 0; i < carts.length; i++) {
+      if (carts[i].selected) {
+        total += carts[i].num * carts[i].price;
+      }
+    }
+    this.setData({
+      // carts: carts,
+      totalPrice: total.toFixed(2)
+    });
+  },
+  toPay(){
+  
+  },
+  addCount(e) {
+    const index = e.currentTarget.dataset.index;
+    let carts = this.data.carts;
+    let num = carts[index].num;
+    num = num + 1;
+    carts[index].num = num;
+    this.setData({
+      carts: carts
+    });
+    this.getTotalPrice();
+  },
+  minusCount(e) {
+    const index = e.currentTarget.dataset.index;
+    let carts = this.data.carts;
+    let num = carts[index].num;
+    if (num <= 1) {
+      return false;
+    }
+    num = num - 1;
+    carts[index].num = num;
+    this.setData({
+      carts: carts
+    });
+    this.getTotalPrice();
+  },
+  deleteList(e) {
+    const index = e.currentTarget.dataset.index;
+    let carts = this.data.carts;
+    carts.splice(index, 1);
+    this.setData({
+      carts: carts
+    });
+    if (!carts.length) {
+      this.setData({
+        hasList: false
+      });
+    } else {
+      this.getTotalPrice();
+    }
+  },
+  selectAll(e) {
+    let selectAllStatus = this.data.selectAllStatus;
+    selectAllStatus = !selectAllStatus;
+    let carts = this.data.carts;
+    for (let i = 0; i < carts.length; i++) {
+      carts[i].selected = selectAllStatus;
+    }
+    this.setData({
+      selectAllStatus: selectAllStatus,
+      carts: carts
+    });
+    this.getTotalPrice();
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */
