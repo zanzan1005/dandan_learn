@@ -142,7 +142,42 @@ CSS
 
     - 特性：1.使BFC内部浮动元素不会乱跑
             2. 和浮动元素产生边界
-    
+    (具有BFC特性的元素可以看作是一种独立的容器，容器里面的元素不会影响外面元素的布局)
+
+    形成BFC的条件(脱离文档流)
+    1. 根元素，HTML，是最大的BFC
+    2. 浮动元素，float: none 之外的所有值
+    3. position: fixed /absolute
+    4. overflow: visiable 之外的所有值
+    5. display: inline-block / table-cell /flex
+
+    BFC 和普通文档流的 区别 
+    普通： 
+      1. 浮动的元素不会被计入父级高度
+      2. 非浮动元素会覆盖浮动元素的位置
+      3. margin 会传给父级
+      4. 两个相邻元素上下 margin 会重叠
+
+    BFC:
+      1. 浮动的元素会被计入父级高度
+      2. 非浮动元素不会覆盖浮动元素的位置
+      3. margin 不会传给父级
+      4. 两个相邻元素上下 margin 不会重叠
+
+    BFC布局特性：
+      1. 在BFC布局下，内部的盒子会在垂直方向一个一个放置
+      2. 盒子垂直方向的距离由margin决定，属于同一个BFC的盒子margin会重叠
+      3. BFC区域的元素不会与浮动的元素重叠
+      4. 计算BFC的高度时，浮动元素也参与计算
+
+13. 行内元素水平垂直居中： 
+    1. (父元素)text-align: center
+    2. display: flex
+       align-items: center
+       justify-content: center
+
+    块级元素水平垂直居中
+
 
 
 
