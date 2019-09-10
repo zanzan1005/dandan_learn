@@ -67,7 +67,85 @@ CSS
       - 通用选择器 *
 
       复杂的：
-      - 
+      - 组合选择器 （.head .head_one)
+      - 后代选择器 （#head ul li)
+      - 群组选择器 （div span image{color:red} )
+      - 继承选择器
+      - 伪类选择器 （a::after)
+      - 子选择器 （div>p)
+      - CSS相邻选择器 
+
+6. 前端像素问题 ————画一条0.5px的线
+    目标元素 相对定位 
+    .div
+      position relative
+    设置目标元素伪元素的绝对定位
+    .div::after 
+      position absolute
+      border: 1px solid red
+      box-sizing: border-box
+      height: 200%
+      width: 200%
+      transform: scale(0.5)
+      transform-origin: 0 0
+
+7. transition and animation 的区别
+   - transition 是2帧2帧的，animation 可以1帧1帧的
+
+
+- display: flex
+    align-item: center
+    justify-content: center
+
+    fu 
+      position relative
+    zi
+      position absolute
+      top 50%
+      left 50%
+      transform: translate (-50%,-50%)
+
+    fu 
+      display: table-cell
+      text-align: center
+      vertrical-align: middle
+    zi 
+      display: inline-block
+      vertical-align: middle
+
+8. css选择器优先级
+    !important > 行内样式 > ID选择器 > 类选择器 > 标签选择器 > 通配符 > 继承 > 浏览器默认样式
+    1. 属性后面加!important 会覆盖页面内的任何样式
+    2. 通配符选择器 *
+    3. 同一级别后写的会覆盖先写的
+
+9. 行内元素和块级元素
+    块级元素：div p ul li h1-h6
+    行内元素: span img a i
+
+10. 如何用css3画一个三角形
+    width: 0
+    height: 0
+    border: 100px solid transparent
+    border-bottom: 100px solid blue;
+
+    如果限制了高度直接改变border-bottom 的值
+
+11. flex 弹性布局
+    - 弹性布局默认不改变项目的宽度，但是默认改变项目的高度
+    任何一个容器都可以指定为 flex 布局，行内元素也一样
+    display: inline-flex
+    webkit 内核的浏览器必须加上webkit 前缀
+    flex-direction 决定主轴的方向 row/column/row-reverse/column-reverse
+
+12. BFC 块级格式化上下文
+
+    - 特性：1.使BFC内部浮动元素不会乱跑
+            2. 和浮动元素产生边界
+    
+
+
+
     
 
 
