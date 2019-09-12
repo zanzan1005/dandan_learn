@@ -209,9 +209,84 @@ CSS
     - vuex 数据流,$emit 发布，$on 订阅一个组件 
      npm  vue-enent-proxy
 
-17. 圣杯布局 / 双飞翼布局
-    
+17. 圣杯布局 
+    <div class="container">
+      <div class="main">main</div>
+      <div class="left">left</div>
+      <div class="right">right</div>
+    </div>
 
+    .container{
+      padding: 0 300px 0 200px;
+    }
+    .main,.left,.right{
+      min-height: 200px;
+      position: relative;
+      float: left;
+    }
+    .left{
+      background: red;
+      width: 200px;
+      margin-left: 100%;
+      left: -200px;
+    }
+    .right{
+      background: blue;
+      width: 300px;
+      margin-left: -300px;
+      right: -300px;
+    }
+    .main{
+      background: green;
+      width: 100%;
+    }
+     
+18. 实现三栏布局之双飞翼布局
+    <div class="container">
+      <div class="main">
+        <div class="content">content</div>
+      </div>
+      <div class="left">left</div>
+      <div class="right">right</div>
+    </div>
+
+    .main,.left,.right{
+      float: left;
+      min-height: 200px;
+      text-align: center;
+    }
+    .left{
+      background: green;
+      margin-left: -100%;
+      width: 200px;
+    }
+    .right{
+      width: 300px;
+      background: red;
+      margin-left: -300px;
+    }
+    .main{
+      width: 100%;
+      background: blue;
+    }
+    .content{
+      margin: 0 300px 0 200px;
+    }
+
+19. vue 中设置key 值的作用
+    - vue 总是高效的渲染元素而不是从头渲染，这也是diff算法的精髓
+    在执行列表渲染时要求添加key值
+
+    key的作用是为了更高效的更新虚拟DOM
+    1. 元素的唯一性： 提升了匹配元素index的性能
+    2. key值设置唯一可以很快的找到相对应的元素
+
+20. 如何模拟一个map
+
+    map()方法遍历数组中每一个元素，且对其执行一次回调函数
+    currentValue: 必选 
+    index: 可选
+    arr: 可选
 
 
 
