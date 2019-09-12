@@ -30,7 +30,7 @@ CSS
   - 父元素盒子：
     display: table-cell;
     text-align: center;
-    vertical-align: center;
+    vertical-align: middle;
     子元素盒子： 
     display: inline-block;
     vertical-align: middle;
@@ -177,6 +177,40 @@ CSS
        justify-content: center
 
     块级元素水平垂直居中
+
+14. this指向问题
+    函数的不同场合，this有不同的值，this就是函数运行时的环境对象
+    1. 普通函数调用，指向全局对象——window(全局作用域下，this和window指向同一个内存堆)
+      - 自执行函数的this
+      - 回调函数的this
+      - 递归函数的this 
+    2. 对象方法调用，指向上一级对象
+    3. 作为构造函数调用，所谓构造函数 ，就是通过这个函数生成一个新的对象，这时候的this就指向这个新的对象
+    4. apply调用，apply是函数的一个方法，作用是改变this的作用域
+
+15. 介绍一下MVVM(数据的双向绑定)
+    Model-View-ViewModel (MVVM)  => 模型-视图-视图模型
+    (模型是指后端传递的数据，视图是指要展示的页面，视图模型是MVVM的核心，它是链接view和model的桥梁)
+
+    它有两种实现方式： 
+    1. 将【模型】转换为【视图】，即将后端传递的数据转换成前端的页面，实现的方式是  数据绑定
+    2. 将【视图】转换成【模型】，即将前端的页面转换成后端的数据，实现的方式是  DOM 监听
+    3. 这两个方向都能实现的我们称之为 双向绑定
+    总结： 在MVVM框架下，模型和视图是不能直接通信的，他们通过ViewModel来实现通信，ViewModel通常需要一个观察者observer,当数据发生变化，ViewModel可以监听到数据的这个变化，并且通知视图做相应的更新，当用户操作视图时，ViewModel也可以通知数据做出相应的改变
+    只关心数据的流传，减少强耦合性，关键就是数据的双向绑定
+
+    关键步骤：
+    1. 实现数据监听器observer,用object.defineProperty()来重写数据的get/set方法，值更新就在订阅者中通知set更新数据
+    2. 实现模板编译compile，深度遍历dom树，对每个元素节点的指令模板替换数据以及订阅数据
+	  3. 实现watch用于连接Observer和compile，能够订阅并接受每一个属性的变动的通知，执行指令绑定的相应的回调函数，从而更新数据
+
+16. eventBus vuex
+    - eventBus 解决了兄弟组件之间事件的传递问题，本质是订阅者发布者模式
+    - vuex 数据流,$emit 发布，$on 订阅一个组件 
+     npm  vue-enent-proxy
+
+17. 圣杯布局 / 双飞翼布局
+    
 
 
 
