@@ -53,7 +53,7 @@ CSS
     }
   不会破坏文档流，也没有副作用
 
-4. position 的 8 种定位
+4. position 的 4 种定位
   - static 默认定位，没有定位
   - relative 设置相对定位，一般在子元素设置absolute的时候父元素设置relative
   - absolute 绝对定位，相对于上一级不是static的第一个父元素进行定位，如果向上没有找到position,则相对于body进行定位
@@ -287,6 +287,9 @@ CSS
     currentValue: 必选 
     index: 可选
     arr: 可选
+
+
+
 
 
 
