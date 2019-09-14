@@ -1,0 +1,18 @@
+.container{
+  width: 100%;
+}
+.content{
+  padding: 0 15% 0 15%;
+  width: 100%;
+  display: flex;
+}
+.list{
+  width: 23%;
+}
+.product-content{
+  width: 75%;
+  margin-left: 2%;
+}
+.product-list{
+  flex-direction: column;
+}
