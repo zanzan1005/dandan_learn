@@ -291,10 +291,38 @@ CSS
 21. push() 方法朝数组的末尾添加一个或多个元素，并返回新的长度
     reverse() 方法用于颠倒数组的顺序
 
+22. JavaScript的内置可迭代对象
+    1. 数组Arrays
+    2. 字符串Strings
+    3. Map
+    4. Set
+    5. arguments
+    6. Typed Arrays
+    7. Generators
+
+23. 闭包
+    闭包发生在创建函数的时候，实质上是一个作用域，在该作用于允许自身访问并操作该作用域之外的变量
+
+24. 异步类型：
+    - 普通事件 click resize
+    - 资源加载 load error
+    - 定时器 setTimeout setInveral
 
 
-    'main'
+25. HTTP 
+    1. https的SSL加密是在传输层实现的
+    2. 基本概念
+      http: 超文本传输协议
+      https: 以安全为目标的http通道(理解为http的安全版本)
 
+26. TCP 和 UDP 的差别
+    1. TCP是面向连接的，UDP是无连接的，即发送数据前不需要建立连接
+    2. TCP提供可靠的交付，UDP尽最大努力交付，不保证可靠交付
+    因此TCP适合大数据量的交换
+    3. TCP面向字节流，UDP面对报文
+    4. TCP是1对1，UDP是1对1或1对多
+    5. TCP首部20字节，UDP8字节
+    6. TCP是面向连接的可靠性传输，UDP不可靠
 
 
 
