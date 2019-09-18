@@ -121,7 +121,7 @@ CSS
 
 9. 行内元素和块级元素
     块级元素：div p ul li h1-h6
-    行内元素: span img a i
+    行内元素: span img a i 
 
 10. 如何用css3画一个三角形
     width: 0
@@ -323,6 +323,25 @@ CSS
     4. TCP是1对1，UDP是1对1或1对多
     5. TCP首部20字节，UDP8字节
     6. TCP是面向连接的可靠性传输，UDP不可靠
+
+27. 判断一个对象是否为空对象
+    1. JSON.stringify
+      var a = {}
+      var b = (JSON.stringify(a) === '{}');
+    2. !Object.keys(obj).length
+    3. $.isEmptyObject(obj)
+
+28. 状态码
+    400 ：请求无效
+    401: 需要验证
+    403： 服务器已经得到请求，但被拒绝执行
+
+
+
+. 防抖和节流
+    1. 防抖(debounce)
+        所谓防抖，就是指触发事件后n秒内只能执行一次，如果在n秒内再次触发事件，则会重新计算函数执行时间
+
 
 
 
