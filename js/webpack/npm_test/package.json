@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.1.4"
+    "mocha": "^10.2.0"
   },
   "name": "npm_test",
   "description": "- /nodemodules\r 不需要被提交的",
